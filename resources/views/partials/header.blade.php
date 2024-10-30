@@ -5,9 +5,9 @@
         </div>
         <div class="d-flex justify-content-around">
             <ul class="nav justify-content-center">
-                {% for category in CATEGORYS %}
+                {{-- {% for category in CATEGORYS %}
                     <li><a href="/produit/{{ category.url }}" class="nav-link text-body-emphasis">{{ category.name }}</a></li>
-                {% endfor %}
+                {% endfor %} --}}
             </ul>
             <a target="_blank" href="https://manager.nexhost.fr"><button class="btn btn-secondary">Espace client</button></a>
         </div>

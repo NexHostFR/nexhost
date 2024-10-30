@@ -1,6 +1,6 @@
-{% extends 'base.html.twig' %}
+@extends('base')
 
-{% block body %}
+@section('body')
 <main>
     <!-- Section Recrutement -->
     <section class="container-fluid my-5">
@@ -142,4 +142,4 @@
         </div>
     </section>
 </main>
-{% endblock %}
+@endsection

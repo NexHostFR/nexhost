@@ -54,13 +54,13 @@
                 </div>
             </div>
             <div class="col">
-                <img class="rounded-3 border border-2 border-light" width="100%" src="{{ asset('img/serveur-image-ssd.jpg') }}" alt="">
+                <img class="rounded-3 border border-2 border-light" width="100%" src="/asset/img/serveur-image-ssd.jpg" alt="">
             </div>
         </div>
     </div>
-    {% include 'compenents/discord.html.twig' %}
+    @include('components.discord')
     <!-- Liste des produit les plus bas de chaque catégorie -->
-    <div class="container mt-3 b-4 pb-4">
+    {{-- <div class="container mt-3 b-4 pb-4">
         <div class="d-flex flex-row row-cols-1 row-cols-md-3 justify-content-center text-center">
             {% for product in listeProduitPasCher %}
                 <div class="col">
@@ -82,11 +82,11 @@
                 </div>
             {% endfor %}
         </div>
-    </div>
+    </div> --}}
     <div class="container mt-3 pt-4">
         <div class="d-flex flex-sm-row flex-column">
             <div class="col me-4">
-                <img class="rounded-3 border border-2 border-light" width="100%" src="{{ asset('img/europe-carte.jpg') }}" alt="Carte de l'europe obtenue sur pixbay">
+                <img class="rounded-3 border border-2 border-light" width="100%" src="/asset/img/europe-carte.jpg" alt="Carte de l'europe obtenue sur pixbay">
             </div>
             <div class="col ms-4">
                 <h2>Votre hébergement partenaire en Europe</h2>
@@ -127,18 +127,18 @@
                 <p>1 an d'expertise et d'innovation</p>
             </div>
             <div class="border-top">
-                {% for information in ListeInformations %}
+                <?php foreach ($ListeInformations as $information) { ?>
                     <div class="p-5">
-                        <h3>{{ information.information }}</h3>
-                        <p>{{ information.description }}</p>
+                        <h3>{{ $information['information'] }}</h3>
+                        <p>{{ $information['description'] }}</p>
                     </div>
-                {% endfor %}
+                <?php } ?>
             </div>
         </div>
     </div>
     <!-- Section NewsLetter -->
-    {% include 'compenents/newsletter.html.twig' %}
+    @include('components.newsletter')
     <!-- Section Support -->
-    {% include 'compenents/support_information.html.twig' %}
+    @include('components.support_information')
 </main>
 @endsection

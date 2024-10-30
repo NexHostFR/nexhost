@@ -1,6 +1,6 @@
-{% extends "base.html.twig" %}
+@extends('base')
 
-{% block body %}
+@extends('body')
 <main>
     <div class="container-fluid">
 
@@ -62,4 +62,4 @@
     </div>
     {% include "compenents/faq.html.twig" %}
 </main>
-{% endblock %}
+@endsection
