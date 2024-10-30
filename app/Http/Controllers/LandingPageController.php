@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Newsletter;
 use Illuminate\Http\Request;
 
 class LandingPageController extends Controller
@@ -26,5 +27,18 @@ class LandingPageController extends Controller
             'ListeInformations' => $ListeInformations,
             'description' => "Bienvenue sur notre site web"
         ]);
+    }
+
+    public function store(Request $request)
+    {
+        $request->validate([
+            'email' => 'required|email',
+            'accept_consent' => 'required'
+        ]);
+
+        $newsletter = new Newsletter();
+        $newsletter->saveNewsletter($request);
+
+        return redirect()->back()->with('message', 'Merci pour votre inscription à notre newsletter');
     }
 }
