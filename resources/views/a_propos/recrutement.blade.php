@@ -1,6 +1,6 @@
 @extends('base')
 
-@extends('body')
+@section('body')
 <main>
     <div class="container-fluid">
 
@@ -41,25 +41,24 @@
     <!-- Sectrion liste des offres -->
     <div class="container mt-10 mb-5">
         <h3 class="text-center mb-5">Nos offres d'emploi</h3>
-        {% if offresEmplois != null %}
-            {% for offre in offresEmplois %}
+        @if (isset($offresEmplois) && $offresEmplois != null)
+            @foreach ($offresEmplois as $offre)
                 <div class="justify-content-between d-flex flex-column flex-md-row">
-                    <h3>{{offre.NomOffre}}</h3>
+                    <h3>{{ $offre->NomOffre }}</h3>
                     <div class="d-flex flex-row">
-                        <p>{{offre.TypeContrat}}</p>
-                        <p>{{offre.Localisation}}</p>
-                        <p>{{offre.Service}}</p>
+                        <p>{{ $offre->TypeContrat }}</p>
+                        <p>{{ $offre->Localisation }}</p>
+                        <p>{{ $offre->Service }}</p>
                     </div>
                     <div>
-                        <a href="{{ path('offre_emploi', {'id': offre.id}) }}">Voir l'offre</a>
+                        <a href="{{ route('offre_emploi', ['id' => $offre->id]) }}">Voir l'offre</a>
                     </div>
                 </div>
-            {% endfor %}
-            {% else %}
-                <p class="text-center">Il n'y a pas d'offre pour le moment</p>
-        {% endif %}
-        
+            @endforeach
+        @else
+            <p class="text-center">Il n'y a pas d'offre pour le moment</p>
+        @endif
     </div>
-    {% include "compenents/faq.html.twig" %}
+    @include('components.faq')
 </main>
 @endsection

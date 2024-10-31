@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\AProposController;
+use App\Http\Controllers\ContactCommercialController;
 use App\Http\Controllers\LandingPageController;
 use App\Models\Newsletter;
 use Illuminate\Support\Facades\Route;
@@ -16,5 +18,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [LandingPageController::class, 'index']);
+Route::post('/', [LandingPageController::class, 'store_newsletter']);
 
-Route::post('/', [LandingPageController::class, 'store']);
+Route::get('/a-propos', [AProposController::class, 'a_propos']);
+
+Route::get('/a-propos/equipe', [AProposController::class, 'view_equipe']);
+
+Route::get('/a-propos/carriere', [AProposController::class, 'view_carriere']);
+
+
+Route::get('/sales', [ContactCommercialController::class, 'view_contact_commercial']);

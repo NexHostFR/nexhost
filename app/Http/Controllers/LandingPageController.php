@@ -29,13 +29,8 @@ class LandingPageController extends Controller
         ]);
     }
 
-    public function store(Request $request)
-    {
-        $request->validate([
-            'email' => 'required|email',
-            'accept_consent' => 'required'
-        ]);
-
+    public function store_newsletter(Request $request)
+    {   
         $newsletter = new Newsletter();
         $newsletter->saveNewsletter($request);
 

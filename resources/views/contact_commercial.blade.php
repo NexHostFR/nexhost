@@ -1,6 +1,6 @@
-{% extends 'base.html.twig' %}
+@extends('base')
 
-{% block body %}
+@section('body')
 <main>
     <div class="my-5 mx-auto text-center">
         <h1 class="display-5 fw-bold text-body-emphasis text-center">Contactez notre équipe commerciale</h1>
@@ -121,4 +121,4 @@
     <!-- Pourquoi choisir NexHost -->
     {% include 'compenents/information_general.html.twig' %}
 </main>
-{% endblock %}
+@endsection

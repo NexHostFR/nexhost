@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Http\Request;
 
 class Newsletter extends Model
 {
@@ -11,9 +12,9 @@ class Newsletter extends Model
 
     protected $fillable = ['email', 'accept_consent'];
 
-    public function saveNewsletter($request) {
-        $this->email = $request->email;
-        $this->accept_consent = $request->accept_consent;
+    public function saveNewsletter(Request $request) {
+        $this->email = $request->string('email')->trim();
+        $this->accept_consent = $request->boolean('accept_consent');
         $this->save();
     }
 }

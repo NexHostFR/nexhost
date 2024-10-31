@@ -10,14 +10,16 @@
                 </div>
             
                 <div class="form-check">
-                    <input type="checkbox" name="consent" id="consent" class="form-check-input" required>
+                    <input type="checkbox" name="accept_consent" id="consent" class="form-check-input" required>
                     <label for="consent" class="form-check-label">
                         J'accepte de recevoir la newsletter mensuelle et les nouveaux articles de blog. 
                         <a href="#" class="text-white text-decoration-underline">Nous respectons vos données</a> 
                         et vous pourrez vous désinscrire à tout moment.
                     </label>
                 </div>
-            </form>            
+
+                @csrf
+            </form>
         </div>
         <div class="col-md-5 text-center">
             <!-- Image ou illustration -->
