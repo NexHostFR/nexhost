@@ -28,3 +28,4 @@ Route::get('/a-propos/carriere', [AProposController::class, 'view_carriere']);
 
 
 Route::get('/sales', [ContactCommercialController::class, 'view_contact_commercial']);
+Route::post('/sales', [ContactCommercialController::class, 'send_contact_commercial']);
