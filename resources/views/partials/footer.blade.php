@@ -3,20 +3,20 @@
         <div class="border-bottom">
             <div class="d-flex flex-row justify-content-between align-items-center">
                 <div class="col">
-                    <img src="./asset/img/logo.png" alt="Logo de NexHost">
+                    <img src="/asset/img/logo.png" alt="Logo de NexHost">
                 </div>
                 <div class="col d-flex flex-row align-items-center">
                     <div class="col">
-                        <a href="https://twitter.com/NexHostFR"><img src="{{ asset('img/twitter.png') }}" alt="Twitter"></a>
+                        <a class="link-social" href="https://twitter.com/NexHostFR"><i class="bi bi-twitter-x"></i></a>
                     </div>
                     <div class="col">
-                        <a href="https://www.facebook.com/NexHostFR"><img src="{{ asset('img/facebook.png') }}" alt="Facebook"></a>
+                        <a class="link-social" href="https://www.facebook.com/NexHostFR"><i class="bi bi-facebook"></i></a>
                     </div>
                     <div class="col">
-                        <a href="https://www.linkedin.com/company/nexhost"><img src="{{ asset('img/linkedin.png') }}" alt="LinkedIn"></a>
+                        <a class="link-social" href="https://www.linkedin.com/company/nexhost"><i class="bi bi-linkedin"></i></a>
                     </div>
                     <div class="col">
-                        <a href="https://www.instagram.com/nexhostfr/"><img src="{{ asset('img/instagram.png') }}" alt="Instagram"></a>
+                        <a class="link-social" href="https://www.instagram.com/nexhostfr/"><i class="bi bi-instagram"></i></a>
                     </div>
                 </div>
             </div>
@@ -44,7 +44,7 @@
         </div>
         <div class="border-top d-flex flex-row pb-5 pt-3">
             <span class="col text-center">&copy;2024 NexHost</span>
-            <a href="/cgv/condition-general" class="col text-center">Document légaux</a>
+            {{-- <a href="/cgv/condition-general" class="col text-center">Document légaux</a> --}}
             <a href="/cgv/mentions-legales" class="col text-center">Mentions légales</a>
             <a href="/cgv/protection-donnes" class="col text-center">Protection des données</a>
             <a href="/cgv/politique-confidentilite" class="col text-center">Politique de confidentialité</a>

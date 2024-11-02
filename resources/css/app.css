@@ -63,6 +63,11 @@ body {
     cursor: pointer;
 }
 
+.link-social {
+    color: var(--bs-body-color);
+    font-size: 20px;
+}
+
 @media screen and (min-width: 768px) {
     .w-md-25 {
         width: 25% !important;
