@@ -1,18 +1,22 @@
 <header class="flex items-center p-3">
-    <div class="flex flex-wrap items-center justify-around">
+    <div class="flex flex-wrap items-center justify-between w-full">
         <div class="flex items-center">
-            <a href="/" class="text-decoration-none">
+            <a href="/" class="no-underline">
                 <img src="/asset/img/logo.png" alt="Logo de NexHost" class="h-16">
             </a>
         </div>
-        <div class="flex justify-around">
-            <ul class="flex space-x-4">
-                {{-- {% for category in CATEGORYS %} 
-                    <li><a href="/produit/{{ category.url }}" class="text-body-emphasis hover:underline">{{ category.name }}</a></li> 
-                {% endfor %} --}}
-            </ul>
+        <div class="flex items-center space-x-4">
+            {{-- <ul class="flex space-x-4"> 
+                <!-- {% for category in CATEGORYS %} -->
+                <li>
+                    <a href="/produit/{{ category.url }}" class="text-gray-900 hover:underline">
+                        {{ category.name }}
+                    </a>
+                </li>
+                <!-- {% endfor %} -->
+            </ul>--}}
             <a target="_blank" href="https://manager.nexhost.fr">
-                <button class="btn bg-gray-700 text-white">Espace client</button>
+                <button class="bg-gray-700 text-white py-2 px-4 rounded hover:bg-gray-800">Espace client</button>
             </a>
         </div>
     </div>
