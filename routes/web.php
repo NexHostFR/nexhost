@@ -5,7 +5,6 @@ use App\Http\Controllers\ContactCommercialController;
 use App\Http\Controllers\LandingPageController;
 use App\Http\Controllers\LegalPageController;
 use App\Http\Controllers\ProductPageController;
-use App\Models\Newsletter;
 use Illuminate\Support\Facades\Route;
 
 /*
