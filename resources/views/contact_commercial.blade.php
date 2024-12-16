@@ -24,11 +24,11 @@
                 </div>
                 <div class="m-2 p-4 rounded-lg border border-gray-300">
                     <h5 class="font-semibold text-lg">Start-Ups, non-profits et &eacute;ducation</h5>
-                    <p>NexHost soutient les associations &agrave; but non lucratif et les start-ups qui contribuent &agrave; la protection des donn&eacute;es et &agrave; la souverainet&eacute; num&eacute;rique.</p>
+                    <p>NxHost soutient les associations &agrave; but non lucratif et les start-ups qui contribuent &agrave; la protection des donn&eacute;es et &agrave; la souverainet&eacute; num&eacute;rique.</p>
                 </div>
                 <div class="m-2 p-4 rounded-lg border border-gray-300">
                     <h5 class="font-semibold text-lg">Une offre personnalis&eacute;e</h5>
-                    <p>NexHost vous cr&eacute;e une offre sur mesure en fonction de vos besoins.</p>
+                    <p>NxHost vous cr&eacute;e une offre sur mesure en fonction de vos besoins.</p>
                 </div>
             </div>
 

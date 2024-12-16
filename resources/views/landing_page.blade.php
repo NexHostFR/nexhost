@@ -4,7 +4,7 @@
 <main>
     <div class="flex flex-col md:flex-row py-10 my-10 items-center">
         <div class="md:w-1/2 mx-auto text-center">
-            <h1 class="text-4xl font-bold text-gray-900 dark:text-white">NexHost</h1>
+            <h1 class="text-4xl font-bold text-gray-900 dark:text-white">NxHost</h1>
             <p class="mt-4">Découvrez nos offres à petit prix, des hébergements web à partir de 1.99€ par mois. Nous proposons des serveurs très qualitatifs afin de monter votre projet sans aucun problème d'hébergeur.</p>
         </div>
         {{-- <div class="md:w-1/2 mx-auto mt-8 md:mt-0"> 
@@ -21,7 +21,7 @@
     <div class="overflow-hidden py-10 container mx-auto">
         <div class="flex flex-col sm:flex-row">
             <div class="sm:w-1/2">
-                <h2 class="text-2xl font-bold">Pourquoi choisir NexHost</h2>
+                <h2 class="text-2xl font-bold">Pourquoi choisir NxHost</h2>
                 <div class="mt-4">
                     <dl class="mb-6">
                         <dt class="font-semibold">Créé au cœur de l'Europe</dt>
@@ -78,9 +78,9 @@
             </div>
             <div class="sm:ml-6 w-full sm:w-1/2 mt-6 sm:mt-0">
                 <h2 class="text-2xl font-bold">Votre hébergement partenaire en Europe</h2>
-                <p class="mt-4 text-gray-700">NexHost, votre hébergeur 100% européen, vous offre des solutions de haute performance, optimisées pour WordPress et d'autres CMS ou d'autres projets, à des prix compétitifs. Nos serveurs, situés en Europe, garantissent des performances optimales et une sécurité renforcée pour tous vos projets.
+                <p class="mt-4 text-gray-700">NxHost, votre hébergeur 100% européen, vous offre des solutions de haute performance, optimisées pour WordPress et d'autres CMS ou d'autres projets, à des prix compétitifs. Nos serveurs, situés en Europe, garantissent des performances optimales et une sécurité renforcée pour tous vos projets.
                 <br>
-                NexHost respecte les législations sur la protection des données les plus strictes d'Europe.
+                NxHost respecte les législations sur la protection des données les plus strictes d'Europe.
                 </p>
             </div>
         </div>
@@ -97,21 +97,21 @@
             <div class="mt-6 space-y-6">
                 <div>
                     <h2 class="text-lg font-semibold">Respect de la vie privée et de vos données</h2>
-                    <p class="text-gray-600">NexHost appartient à son fondateur, ses employés et ses clients. Vos données sont traitées en interne par des logiciels développés en France, qui respectent votre vie privée et vos données.</p>
+                    <p class="text-gray-600">NxHost appartient à son fondateur, ses employés et ses clients. Vos données sont traitées en interne par des logiciels développés en France, qui respectent votre vie privée et vos données.</p>
                 </div>
                 <div>
                     <h2 class="text-lg font-semibold">Sécurité et protection des données</h2>
-                    <p class="text-gray-600">NexHost maîtrise de bout en bout ses services pour assurer la sécurité et la confidentialité des données.</p>
+                    <p class="text-gray-600">NxHost maîtrise de bout en bout ses services pour assurer la sécurité et la confidentialité des données.</p>
                 </div>
                 <div>
                     <h2 class="text-lg font-semibold">Un cloud 100% indépendant</h2>
-                    <p class="text-gray-600">NexHost conçoit et développe ses propres solutions en interne, en France.</p>
+                    <p class="text-gray-600">NxHost conçoit et développe ses propres solutions en interne, en France.</p>
                 </div>
             </div>
         </div>
         <div class="my-6">
             <div class="text-start mt-16">
-                <h1 class="text-3xl font-bold">NexHost</h1>
+                <h1 class="text-3xl font-bold">NxHost</h1>
                 <p class="text-gray-700">1 an d'expertise et d'innovation</p>
             </div>
             <div class="border-t mt-6">

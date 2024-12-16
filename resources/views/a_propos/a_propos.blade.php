@@ -5,7 +5,7 @@
     <!-- Section Recrutement -->
     <section class="w-full my-20">
         <div class="max-w-7xl mx-auto text-center">
-            <h2 class="text-3xl font-bold">Rejoignez NexHost et façonnez l’avenir de l’hébergement web</h2>
+            <h2 class="text-3xl font-bold">Rejoignez NxHost et façonnez l’avenir de l’hébergement web</h2>
             <p class="text-lg mt-6">Nous recherchons des talents créatifs et audacieux pour bâtir ensemble l’hébergement de demain.</p>
             <a href="/a-propos/carriere" class="bg-blue-500 text-white mt-8 px-6 py-3 inline-block rounded shadow hover:bg-blue-600 transition">Découvrir nos opportunités</a>
         </div>
@@ -17,7 +17,7 @@
             <div class="mb-16">
                 <h3 class="text-2xl font-bold">Notre Mission</h3>
                 <p class="mt-6">
-                    Chez <strong>NexHost</strong>, nous nous engageons à offrir des solutions d’hébergement web
+                    Chez <strong>NxHost</strong>, nous nous engageons à offrir des solutions d’hébergement web
                     fiables, performantes et sécurisées, tout en restant proches de nos clients. Notre mission est de 
                     rendre l’hébergement accessible à tous, tout en préservant la transparence, l’éthique et l’innovation.
                 </p>
@@ -26,7 +26,7 @@
                 <h3 class="text-2xl font-bold">Notre Vision</h3>
                 <p class="mt-6">
                     Nous aspirons à devenir un acteur de référence dans le monde de l’hébergement web, tout en favorisant
-                    l’indépendance numérique de nos utilisateurs et en adoptant des pratiques durables. Chez NexHost, 
+                    l’indépendance numérique de nos utilisateurs et en adoptant des pratiques durables. Chez NxHost, 
                     nous croyons en un internet libre, ouvert, où chaque projet peut prospérer.
                 </p>
             </div>
@@ -62,15 +62,15 @@
             <h3 class="text-2xl font-bold mb-16">Ce Que Nos Clients Disent</h3>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <blockquote class="p-8 bg-white shadow rounded">
-                    <p class="mb-6">"NexHost a transformé notre infrastructure digitale grâce à leur expertise et leur réactivité. Nous les recommandons vivement !"</p>
+                    <p class="mb-6">"NxHost a transformé notre infrastructure digitale grâce à leur expertise et leur réactivité. Nous les recommandons vivement !"</p>
                     <footer class="text-sm font-medium text-gray-500">Paul R., <cite title="Source Title">Startup XYZ</cite></footer>
                 </blockquote>
                 <blockquote class="p-8 bg-white shadow rounded">
-                    <p class="mb-6">"Des services fiables et un support technique exceptionnel. NexHost a été un vrai atout pour notre croissance."</p>
+                    <p class="mb-6">"Des services fiables et un support technique exceptionnel. NxHost a été un vrai atout pour notre croissance."</p>
                     <footer class="text-sm font-medium text-gray-500">Anaïs M., <cite title="Source Title">Agence Créative</cite></footer>
                 </blockquote>
                 <blockquote class="p-8 bg-white shadow rounded">
-                    <p class="mb-6">"Une solution d’hébergement flexible et sécurisée qui s’adapte parfaitement à nos besoins. NexHost a gagné notre confiance."</p>
+                    <p class="mb-6">"Une solution d’hébergement flexible et sécurisée qui s’adapte parfaitement à nos besoins. NxHost a gagné notre confiance."</p>
                     <footer class="text-sm font-medium text-gray-500">David L., <cite title="Source Title">E-commerce Pro</cite></footer>
                 </blockquote>
             </div>
@@ -112,10 +112,10 @@
                     <h5 class="text-xl font-bold">Suivez-nous sur les réseaux sociaux</h5>
                     <p class="mt-4">Rejoignez-nous sur les réseaux pour rester informé de nos nouveautés et projets.</p>
                     <div class="flex justify-center mt-6 space-x-4">
-                        <a href="https://twitter.com/NexHostFR" class="w-10 h-10"><i class="bi bi-twitter"></i></a>
-                        <a href="https://www.facebook.com/NexHostFR" class="w-10 h-10"><i class="bi bi-facebook"></i></a>
+                        <a href="https://twitter.com/NxHostFR" class="w-10 h-10"><i class="bi bi-twitter"></i></a>
+                        <a href="https://www.facebook.com/NxHostFR" class="w-10 h-10"><i class="bi bi-facebook"></i></a>
                         <a href="https://www.linkedin.com/company/nxhostfr" class="w-10 h-10"><i class="bi bi-linkedin"></i></a>
-                        <a href="https://www.instagram.com/nexhostfr/" class="w-10 h-10"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.instagram.com/NxHostfr/" class="w-10 h-10"><i class="bi bi-instagram"></i></a>
                     </div>
                 </div>
             </div>

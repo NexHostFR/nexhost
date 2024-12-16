@@ -1,6 +1,6 @@
 <div class="my-5">
     <div class="container mx-auto py-5">
-        <h3 class="text-2xl font-bold text-center">Pourquoi choisir NexHost</h3>
+        <h3 class="text-2xl font-bold text-center">Pourquoi choisir NxHost</h3>
         <div class="flex flex-col md:flex-row justify-between mt-4">
             <div class="m-2 p-4 bg-white shadow rounded-lg flex-1">
                 <h4 class="text-lg font-semibold mb-2 flex items-center">

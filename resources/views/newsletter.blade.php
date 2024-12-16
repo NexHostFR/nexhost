@@ -13,8 +13,8 @@
 
     This friendly message is coming from:
     <ul>
-        <li>Your controller at <code>C:/Users/ThéoKILLIAN/Desktop/nexhost/src/Controller/NewsletterController.php</code></li>
-        <li>Your template at <code>C:/Users/ThéoKILLIAN/Desktop/nexhost/templates/newsletter/index.html.twig</code></li>
+        <li>Your controller at <code>C:/Users/ThéoKILLIAN/Desktop/NxHost/src/Controller/NewsletterController.php</code></li>
+        <li>Your template at <code>C:/Users/ThéoKILLIAN/Desktop/NxHost/templates/newsletter/index.html.twig</code></li>
     </ul>
 </div>
 {% endblock %}
