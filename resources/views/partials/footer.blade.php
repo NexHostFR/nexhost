@@ -6,16 +6,16 @@
                     <img src="/asset/img/logo.png" alt="Logo de NexHost">
                 </div>
                 <div class="flex space-x-4">
-                    <a href="https://twitter.com/NexHostFR" class="text-gray-600 hover:text-blue-500">
+                    <a href="https://twitter.com/NexHostFR" class="text-gray-600 hover:text-blue-500" target="_blank">
                         <i class="bi bi-twitter"></i>
                     </a>
-                    <a href="https://www.facebook.com/NexHostFR" class="text-gray-600 hover:text-blue-800">
+                    <a href="https://www.facebook.com/NexHostFR" class="text-gray-600 hover:text-blue-800" target="_blank">
                         <i class="bi bi-facebook"></i>
                     </a>
-                    <a href="https://www.linkedin.com/company/nexhost" class="text-gray-600 hover:text-blue-600">
+                    <a href="https://www.linkedin.com/company/nxhostfr/" class="text-gray-600 hover:text-blue-600" target="_blank">
                         <i class="bi bi-linkedin"></i>
                     </a>
-                    <a href="https://www.instagram.com/nexhostfr/" class="text-gray-600 hover:text-pink-500">
+                    <a href="https://www.instagram.com/nexhostfr/" class="text-gray-600 hover:text-pink-500" target="_blank">
                         <i class="bi bi-instagram"></i>
                     </a>
                 </div>

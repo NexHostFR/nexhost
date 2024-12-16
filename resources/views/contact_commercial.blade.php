@@ -32,20 +32,20 @@
                 </div>
             </div>
 
-            <div class="flex-1 m-4">
+            <div class="flex-1 m-4 bg-gray-100 p-4 rounded-xl">
                 <h3 class="text-2xl font-bold mb-4">Parlez-nous de votre projet</h3>
                 <p class="text-gray-700 mb-4">Pour vous aider au mieux, merci de nous fournir quelques informations sur vous :</p>
 
                 <form action="" method="post" class="space-y-4">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <select name="entite" id="entite" class="form-select rounded-lg border-gray-300" required>
+                        <select name="entite" id="entite" class="w-full rounded-md bg-white py-1.5 pl-3 pr-8 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-200" required>
                             <option value="organisation_non_lucratif">Organisation &agrave; but non lucratif</option>
                             <option value="start_up">Start-up</option>
                             <option value="pme">PME</option>
                             <option value="independant">Ind&eacute;pendant</option>
                             <option value="grand_entreprise">Grande entreprise</option>
                         </select>
-                        <select name="nombre_employes" id="" class="form-select rounded-lg border-gray-300" required>
+                        <select name="nombre_employes" id="" class="w-full rounded-md bg-white py-1.5 pl-3 pr-8 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-200" required>
                             <option value="1">1</option>
                             <option value="2-9">2-9</option>
                             <option value="10-19">10-19</option>
@@ -57,22 +57,34 @@
                     </div>
 
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <input type="text" name="nom" id="" class="form-input rounded-lg border-gray-300" placeholder="Votre nom" required>
-                        <input type="text" name="prenom" id="" class="form-input rounded-lg border-gray-300" placeholder="Votre pr&eacute;nom" required>
+                        <div class="flex items-center rounded-md bg-white pl-3 outline outline-1 -outline-offset-1 outline-gray-300 focus-within:outline focus-within:outline-2 focus-within:-outline-offset-2 focus-within:outline-indigo-200">
+                            <input type="text" name="nom" id="" class="block min-w-0 grow py-1.5 pl-1 pr-3 text-base text-gray-900 placeholder:text-gray-400 focus:outline focus:outline-0" placeholder="Votre nom" required>
+                        </div>
+                        <div class="flex items-center rounded-md bg-white pl-3 outline outline-1 -outline-offset-1 outline-gray-300 focus-within:outline focus-within:outline-2 focus-within:-outline-offset-2 focus-within:outline-indigo-200">
+                            <input type="text" name="prenom" id="" class="block min-w-0 grow py-1.5 pl-1 pr-3 text-base text-gray-900 placeholder:text-gray-400 focus:outline focus:outline-0" placeholder="Votre pr&eacute;nom" required>
+                        </div>
                     </div>
 
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <input type="email" name="email" id="" class="form-input rounded-lg border-gray-300" placeholder="Votre adresse email" required>
-                        <input type="tel" name="telephone" id="" class="form-input rounded-lg border-gray-300" placeholder="Votre num&eacute;ro de t&eacute;l&eacute;phone" required>
+                        <div class="flex items-center rounded-md bg-white pl-3 outline outline-1 -outline-offset-1 outline-gray-300 focus-within:outline focus-within:outline-2 focus-within:-outline-offset-2 focus-within:outline-indigo-200">
+                            <input type="email" name="email" id="" class="block min-w-0 grow py-1.5 pl-1 pr-3 text-base text-gray-900 placeholder:text-gray-400 focus:outline focus:outline-0" placeholder="Votre adresse email" required>
+                        </div>
+                        <div class="flex items-center rounded-md bg-white pl-3 outline outline-1 -outline-offset-1 outline-gray-300 focus-within:outline focus-within:outline-2 focus-within:-outline-offset-2 focus-within:outline-indigo-200">
+                            <input type="tel" name="telephone" id="" class="block min-w-0 grow py-1.5 pl-1 pr-3 text-base text-gray-900 placeholder:text-gray-400 focus:outline focus:outline-0" placeholder="Votre num&eacute;ro de t&eacute;l&eacute;phone" required>
+                        </div>
                     </div>
 
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <input type="text" name="fonction" id="" class="form-input rounded-lg border-gray-300" placeholder="Votre fonction" required>
-                        <input type="text" name="nom_organisation" id="" class="form-input rounded-lg border-gray-300" placeholder="Nom de votre organisation" required>
+                        <div class="flex items-center rounded-md bg-white pl-3 outline outline-1 -outline-offset-1 outline-gray-300 focus-within:outline focus-within:outline-2 focus-within:-outline-offset-2 focus-within:outline-indigo-200">
+                            <input type="text" name="fonction" id="" class="block min-w-0 grow py-1.5 pl-1 pr-3 text-base text-gray-900 placeholder:text-gray-400 focus:outline focus:outline-0" placeholder="Votre fonction" required>
+                        </div>
+                        <div class="flex items-center rounded-md bg-white pl-3 outline outline-1 -outline-offset-1 outline-gray-300 focus-within:outline focus-within:outline-2 focus-within:-outline-offset-2 focus-within:outline-indigo-200">
+                            <input type="text" name="nom_organisation" id="" class="block min-w-0 grow py-1.5 pl-1 pr-3 text-base text-gray-900 placeholder:text-gray-400 focus:outline focus:outline-0" placeholder="Nom de votre organisation" required>
+                        </div>
                     </div>
 
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <select name="country" id="" class="form-select rounded-lg border-gray-300">
+                        <select name="country" id="" class="w-full rounded-md bg-white py-1.5 pl-3 pr-8 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-200">
                             <option value="FR">France</option>
                             <option value="BE">Belgique</option>
                             <option value="CH">Suisse</option>
@@ -80,22 +92,24 @@
                             <option value="US">Etats-Unis</option>
                             <!-- Ajouter d'autres pays ici -->
                         </select>
-                        <input type="text" name="city" id="" class="form-input rounded-lg border-gray-300" placeholder="Ville" required>
+                        <div class="flex items-center rounded-md bg-white pl-3 outline outline-1 -outline-offset-1 outline-gray-300 focus-within:outline focus-within:outline-2 focus-within:-outline-offset-2 focus-within:outline-indigo-200">
+                            <input type="text" name="city" id="" class="block min-w-0 grow py-1.5 pl-1 pr-3 text-base text-gray-900 placeholder:text-gray-400 focus:outline focus:outline-0" placeholder="Ville" required>
+                        </div>
                     </div>
 
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <select name="category_product" id="" class="form-select rounded-lg border-gray-300" required>
+                        <select name="category_product" id="" class="w-full rounded-md bg-white py-1.5 pl-3 pr-8 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-200" required>
                             <option value="web">H&eacute;bergement Web</option>
                             <option value="autre">Autre</option>
                         </select>
-                        <select name="langue" id="" class="form-select rounded-lg border-gray-300" required>
+                        <select name="langue" id="" class="w-full rounded-md bg-white py-1.5 pl-3 pr-8 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-200" required>
                             <option value="fr">Fran&ccedil;ais</option>
                             <option value="en">Anglais</option>
                         </select>
                     </div>
 
                     <div>
-                        <select name="source_info" id="" class="form-select rounded-lg border-gray-300" required>
+                        <select name="source_info" id="" class="w-full rounded-md bg-white py-1.5 pl-3 pr-8 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-200" required>
                             <option value="">S&eacute;lectionnez d&#39;o&ugrave; vous nous connaissez</option>
                             <option value="internet">Internet</option>
                             <option value="publicite">Publicit&eacute;</option>
@@ -104,7 +118,7 @@
                     </div>
 
                     <div>
-                        <textarea name="demande_projet" class="form-textarea rounded-lg border-gray-300 w-full" placeholder="Parlez-nous de votre projet / demande"></textarea>
+                        <textarea name="demande_projet" class="py-1.5 pl-3 pr-8 rounded-lg border-gray-300 w-full h-40 outline outline-1 -outline-offset-1 outline-gray-300 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-200" placeholder="Parlez-nous de votre projet / demande"></textarea>
                     </div>
 
                     @csrf
