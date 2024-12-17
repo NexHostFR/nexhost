@@ -21,7 +21,6 @@
     </script>
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-    <script src="/asset/js/panel.js"></script>
 
 
     <!-- SEO -->
