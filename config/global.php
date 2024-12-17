@@ -3,7 +3,8 @@
 return [
     'categorie' => [
         'web' => [
-            'title' => "Web"
+            'title' => "Web",
+            'url' => "web",
         ]
     ],
 ];
