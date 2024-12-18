@@ -47,7 +47,19 @@
     </section>
 
     <div class="container-fluid">
-        {{-- Liste en ligne de toutes les technologies --}}
+        {{-- Caroussel de tout les CMS compatible --}}
+    </div>
+
+    <div>
+        {{-- Presentation des produit --}}
+    </div>
+
+    @include('components.information_general')
+
+    @include('components.information_backup')
+
+    <div>
+        {{-- Avantage --}}
     </div>
 </main>
 @endsection

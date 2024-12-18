@@ -2,9 +2,14 @@
 
 return [
     'categorie' => [
-        'web' => [
-            'title' => "Web",
-            'url' => "web",
+        'hebergement' => [
+            'url' => "hebergement",
+            "product_list" => [
+                'web' => [
+                    "title" => "Hébergement Web",
+                    "url" => "web",
+                ]
+            ]
         ]
     ],
 ];
