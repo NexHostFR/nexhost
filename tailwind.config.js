@@ -7,7 +7,11 @@ module.exports = {
   ],
   darkMode: 'class',
   theme: {
-    extend: {},
+    extend: {
+      "listStyleImage": {
+        checkmarker: "url('/asset/svg/check.svg')",
+      }
+    },
   },
   plugins: [],
 }
