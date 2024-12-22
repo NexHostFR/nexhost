@@ -22,9 +22,9 @@
                             <div class="p-4">
                                 <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
                                     <div class="mt-1 flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50">
-                                        <svg class="size-6 text-gray-600 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-                                            <path d="M13.405 7.027a5.001 5.001 0 0 0-9.499-1.004A3.5 3.5 0 1 0 3.5 13H13a3 3 0 0 0 .405-5.973"/>
-                                        </svg>
+                                            <svg class="size-6 text-gray-600 group-hover:text-gray-500" fill="none" viewBox="-1 -1 26 26" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                                                <path d="M13.405 7.027a5.001 5.001 0 0 0-9.499-1.004A3.5 3.5 0 1 0 3.5 13H13a3 3 0 0 0 .405-5.973"/>
+                                            </svg>
                                     </div>
                                     <div>
                                         <a href="/hebergement/web" class="font-semibold text-gray-900 group-hover:text-gray-500">
@@ -67,7 +67,7 @@
                             <div class="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
                                 <div class="flex flex-col items-start gap-y-2 p-3 text-gray-900">
                                     <h3 class="font-semibold">Support & contact</h3>
-                                    <a href="/sales" class="hover:bg-gray-500">Contacter le service commercial</a>
+                                    <a href="/sales" class="hover:text-gray-500">Contacter le service commercial</a>
                                 </div>
                             </div>                            
                             
