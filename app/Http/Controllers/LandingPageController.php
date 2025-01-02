@@ -11,8 +11,8 @@ class LandingPageController extends Controller
     {   
         $ListeInformations = array(
             array(
-                "information" => "+50",
-                "description" => "serveurs répartie dans toute l'Europe"
+                "information" => "3",
+                "description" => "serveurs basés en France"
             ),
             array(
                 "information" => "1",
@@ -21,6 +21,14 @@ class LandingPageController extends Controller
             array(
                 "information" => "+90 %",
                 "description" => "des ressources consacrées a la R&D"
+            ),
+            array(
+                "information" => "100 %",
+                "description" => "de nos clients satisfaits"
+            ),
+            array(
+                "information" => "100 %",
+                "description" => "créé en interne pour viser la souveraineté"
             )
         );
         return view('landing_page', [
