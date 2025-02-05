@@ -54,7 +54,27 @@
                     </div>
                 </li>
                 <li class="relative">
-                    
+                    <!-- Bouton pour le menu produit -->
+                    <button type="button" class="inline-flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900 open-menu" aria-expanded="false" data-menu-target="menu-ressources">
+                        <span>Nos ressources</span>
+                        <svg class="size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                            <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                        </svg>
+                    </button>
+
+
+                    <div id="menu-ressources" class="menu absolute left-1/2 z-10 mt-5 flex w-screen max-w-max -translate-x-1/2 px-4 hidden group-hover:block">
+                        <div class="w-screen max-w-3xl min-h-52 flex-auto overflow-hidden rounded-3xl bg-white text-sm/6 shadow-lg ring-1 ring-gray-900/5">
+                            <div class="p-4">
+                                <h3 class="px-4">Support et contact</h3>
+                                <div class="">
+                                    <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
+                                        <a href="/contact" class="font-semibold text-gray-900 group-hover:text-gray-500">Contactez-nous</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </li>
             </ul>
             <a target="_blank" href="https://manager.NxHost.fr">

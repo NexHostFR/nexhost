@@ -5,23 +5,44 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 class ProductPageController extends Controller
-{
-    public function index(Request $request) {
-        // On récupère et on le traite afin de plus facilement manipuler par la suite
+{   
+    private $url;
+    private $categorie;
+
+    public function __construct(Request $request) {
         $url = array_slice(explode('/', $request->getRequestUri()), 1);
-        $url = [
+        $this->url = [
             'categorys' => $url[0],
             'produit' => $url[1]
         ];
 
-        $categorie = config("global.categorie.".$url['categorys']);
+        $this->categorie = config("global.categorie.".$this->url['categorys'].".group_list.".$this->url['produit']);
         
-        if(is_null($categorie)) {
+        if(is_null($this->categorie)) {
             return redirect()->to(url('/'));
             exit;
         }
 
-        return view("produit",
+        var_dump($this->categorie);
+    }
+
+    public function index(Request $request) {
+
+        switch($this->url['categorys']) {
+            case "hebergement":
+                if($this->url['produit'] == "web") {
+                    return $this->HebergementWeb($request, $this->url);
+                }
+                break;
+            case "gaming":
+                return $this->HebergementGaming($request, $this->url);
+                break;
+        }
+    }
+
+    public function HebergementWeb(Request $request, $url) {
+
+        return view("product.web",
             [
                 "description" => "Découvrez nos offres web pour tout type de projets, qu'il soit petit, ou avancée."
             ]
