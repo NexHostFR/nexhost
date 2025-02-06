@@ -69,9 +69,10 @@ return [
                             "price_format" => "1.99",
                             "price_cents" => "199",
                             "price_currency" => "€",
+                            "period" => "mois",
                             "price_type" => "mois",
                             "description" => "Pour les petits projets",
-                            "caracteristique" => [
+                            "features" => [
                                 "1" => "1 site web",
                                 "2" => "10 Go d'espace disque",
                                 "3" => "Trafic illimité",
@@ -79,7 +80,8 @@ return [
                                 "5" => "Protection Anti-DDoS",
                                 "6" => "Sauvegardes quotidiennes",
                                 "7" => "Support 24/7"
-                            ]
+                            ],
+                            "highlight" => true
                         ],
                     )
                 ],
@@ -95,9 +97,10 @@ return [
                             "price_format" => "1.99",
                             "price_cents" => "199",
                             "price_currency" => "€",
+                            "period" => "mois",
                             "price_type" => "mois",
                             "description" => "Pour les petits projets",
-                            "caracteristique" => [
+                            "features" => [
                                 "1" => "1 site web",
                                 "2" => "10 Go d'espace disque",
                                 "3" => "Trafic illimité",
@@ -105,7 +108,8 @@ return [
                                 "5" => "Protection Anti-DDoS",
                                 "6" => "Sauvegardes quotidiennes",
                                 "7" => "Support 24/7"
-                            ]
+                            ],
+                            "highlight" => true
                         ],
                     )
                 ]
