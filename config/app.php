@@ -197,6 +197,9 @@ return [
         App\Providers\RouteServiceProvider::class,
         HeaderServiceProvider::class,
 
+        // Ajout team
+        App\Providers\HeaderServiceProvider::class,
+
     ],
 
     /*
