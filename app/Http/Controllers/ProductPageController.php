@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class ProductPageController extends Controller
 {   
     private $url;
-    private $categorie;
+    private $offres;
 
     public function __construct(Request $request) {
         $url = array_slice(explode('/', $request->getRequestUri()), 1);
@@ -16,14 +16,14 @@ class ProductPageController extends Controller
             'produit' => $url[1]
         ];
 
-        $this->categorie = config("global.categorie.".$this->url['categorys'].".group_list.".$this->url['produit']);
+        $this->offres = config("global.categorie.".$this->url['categorys'].".group_list.".$this->url['produit']);
         
-        if(is_null($this->categorie)) {
+        if(is_null($this->offres)) {
             return redirect()->to(url('/'));
             exit;
         }
 
-        var_dump($this->categorie);
+        var_dump($this->offres);
     }
 
     public function index(Request $request) {
@@ -43,8 +43,21 @@ class ProductPageController extends Controller
     public function HebergementWeb(Request $request, $url) {
 
         return view("product.web",
-            [
+            [   
+                "produit" => $this->offres,
+                "offres" => $this->offres['product_list'],
                 "description" => "Découvrez nos offres web pour tout type de projets, qu'il soit petit, ou avancée."
+            ]
+            );
+    }
+
+    public function HebergementGaming(Request $request, $url) {
+
+        return view("product.gaming",
+            [   
+                "produit" => $this->offres,
+                "offres" => $this->offres['product_list'],
+                "description" => "Découvrez nos offres gaming pour tout type de projets, qu'il soit petit, ou avancée."
             ]
             );
     }

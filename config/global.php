@@ -12,21 +12,43 @@ return [
                     "description_head" => "Tout ce qui est nécessaire à la création de site web professionnel, sécurisé, et une performance absolue avec un support de qualité.",
                     "30j" => true,
                     "product_list" => array(
-                        "start" => [
-                            "title" => "Start",
+                        "decouvert" => [
+                            "title" => "Découvert",
                             "price_format" => "1.99",
                             "price_cents" => "199",
+                            "price_currency" => "€",
+                            "period" => "mois",
                             "price_type" => "mois",
                             "description" => "Pour les petits projets",
-                            "caracteristique" => [
+                            "features" => [
                                 "1" => "1 site web",
                                 "2" => "10 Go d'espace disque",
                                 "3" => "Trafic illimité",
                                 "4" => "Certificat SSL gratuit",
                                 "5" => "Protection Anti-DDoS",
+                                "6" => "Sauvegardes manuel",
+                                "7" => "Support 24/7"
+                            ],
+                            "highlight" => false
+                        ],
+                        "premium" => [
+                            "title" => "Premium",
+                            "price_format" => "3.99",
+                            "price_cents" => "399",
+                            "price_currency" => "€",
+                            "period" => "mois",
+                            "price_type" => "mois",
+                            "description" => "Tout vos projets",
+                            "features" => [
+                                "1" => "5 site web",
+                                "2" => "50 Go d'espace disque",
+                                "3" => "Trafic illimité",
+                                "4" => "Certificat SSL gratuit",
+                                "5" => "Protection Anti-DDoS",
                                 "6" => "Sauvegardes quotidiennes",
                                 "7" => "Support 24/7"
-                            ]
+                            ],
+                            "highlight" => true
                         ],
                     )
                 ]
@@ -46,6 +68,7 @@ return [
                             "title" => "Start",
                             "price_format" => "1.99",
                             "price_cents" => "199",
+                            "price_currency" => "€",
                             "price_type" => "mois",
                             "description" => "Pour les petits projets",
                             "caracteristique" => [
@@ -71,6 +94,7 @@ return [
                             "title" => "Start",
                             "price_format" => "1.99",
                             "price_cents" => "199",
+                            "price_currency" => "€",
                             "price_type" => "mois",
                             "description" => "Pour les petits projets",
                             "caracteristique" => [
