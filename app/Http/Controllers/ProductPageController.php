@@ -22,8 +22,6 @@ class ProductPageController extends Controller
             return redirect()->to(url('/'));
             exit;
         }
-
-        var_dump($this->offres);
     }
 
     public function index(Request $request) {

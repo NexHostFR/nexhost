@@ -29,6 +29,7 @@ return [
                                 "6" => "Sauvegardes manuel",
                                 "7" => "Support 24/7"
                             ],
+                            "url" => "/web-hosting/decouvert",
                             "highlight" => false
                         ],
                         "premium" => [
@@ -48,6 +49,8 @@ return [
                                 "6" => "Sauvegardes quotidiennes",
                                 "7" => "Support 24/7"
                             ],
+                            "url" => "/web-hosting/premium",
+                            "url_message" => "Acheter",
                             "highlight" => true
                         ],
                     )
@@ -81,6 +84,8 @@ return [
                                 "6" => "Sauvegardes quotidiennes",
                                 "7" => "Support 24/7"
                             ],
+                            "url" => "/gaming-hosting/minecraft/start",
+                            "url_message" => "Commandez votre serveur FiveM",
                             "highlight" => true
                         ],
                     )
@@ -109,6 +114,8 @@ return [
                                 "6" => "Sauvegardes quotidiennes",
                                 "7" => "Support 24/7"
                             ],
+                            "url" => "/gaming-hosting/fivem/start",
+                            "url_message" => "Commandez votre serveur FiveM",
                             "highlight" => true
                         ],
                     )

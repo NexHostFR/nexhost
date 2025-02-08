@@ -36,7 +36,7 @@
                     @endforeach
                 </ul>
 
-                <a href="#" class="mt-4 rounded-md bg-primary text-center text-white py-2.5 text-sm font-semibold shadow">
+                <a href="https://shop.nxhost.fr/order{{$offer['url']}}" class="mt-4 rounded-md bg-primary text-center text-white py-2.5 text-sm font-semibold shadow">
                     Commencer
                 </a>
             </div>
@@ -45,12 +45,11 @@
 @endsection
 
 @section('hero')
-<section class="bg-gray-100 py-12">
+<section class="py-12">
     <div class="container mx-auto px-4 flex flex-row items-center">
         <div class="w-1/2">
-            <h1 class="text-4xl font-bold mb-4">L'hébergement Web qui grandit avec vous</h1>
-            <p class="text-gray-700 mb-6">Tout ce qui est nécessaire à la création de site web professionnel, sécurisé, et une performance absolue avec un support de qualité.</p>
-            <a href="https://shop.nxhost.fr/order/select/hosting" target="_blank" class="bg-primary text-white font-bold py-2 px-4 rounded">Démarrer avec 30 jours gratuits</a>
+            <h1 class="text-4xl font-bold mb-4">Découvre un serveur de jeu puissant</h1>
+            <p class="text-gray-700 mb-6">Tout ce qui est nécessaire à la création d'un serveur de jeu, sécurisé, et une performance absolue avec un support de qualité.</p>
         </div>
         <div class="w-1/2">
             <!-- Image or illustration for the hero section -->

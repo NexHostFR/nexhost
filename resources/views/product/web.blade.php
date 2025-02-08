@@ -36,7 +36,7 @@
                     @endforeach
                 </ul>
 
-                <a href="#" class="mt-4 rounded-md bg-primary text-center text-white py-2.5 text-sm font-semibold shadow">
+                <a href="https://shop.nxhost.fr/order{{$offer['url']}}" class="mt-4 rounded-md bg-primary text-center text-white py-2.5 text-sm font-semibold shadow">
                     Commencer
                 </a>
             </div>
