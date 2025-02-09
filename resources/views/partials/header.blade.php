@@ -66,7 +66,7 @@
                     <div id="menu-ressources" class="menu absolute left-1/2 z-10 mt-5 flex w-screen max-w-max -translate-x-1/2 px-4 hidden group-hover:block">
                         <div class="w-screen max-w-3xl min-h-52 flex-auto overflow-hidden rounded-3xl bg-white text-sm/6 shadow-lg ring-1 ring-gray-900/5">
                             <div class="p-4">
-                                <h3 class="px-4">Support et contact</h3>
+                                <h3 class="px-4 font-bold">Support et contact</h3>
                                 <div class="">
                                     <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
                                         <a href="/contact" class="font-semibold text-gray-900 group-hover:text-gray-500">Contactez-nous</a>

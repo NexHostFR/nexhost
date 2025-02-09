@@ -37,7 +37,11 @@
                 </ul>
 
                 <a href="https://shop.nxhost.fr/order{{$offer['url']}}" class="mt-4 rounded-md bg-primary text-center text-white py-2.5 text-sm font-semibold shadow">
-                    Commencer
+                    @if (isset($offer['url_message']))
+                        {{$offer['url_message']}}
+                    @else
+                        Commencer
+                    @endif
                 </a>
             </div>
         @endforeach

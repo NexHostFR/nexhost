@@ -50,7 +50,7 @@ return [
                                 "7" => "Support 24/7"
                             ],
                             "url" => "/web-hosting/premium",
-                            "url_message" => "Acheter",
+                            "url_message" => "Commandez votre hébergement Web",
                             "highlight" => true
                         ],
                     )
@@ -76,13 +76,14 @@ return [
                             "price_type" => "mois",
                             "description" => "Pour les petits projets",
                             "features" => [
-                                "1" => "1 site web",
-                                "2" => "10 Go d'espace disque",
-                                "3" => "Trafic illimité",
-                                "4" => "Certificat SSL gratuit",
-                                "5" => "Protection Anti-DDoS",
-                                "6" => "Sauvegardes quotidiennes",
-                                "7" => "Support 24/7"
+                                "1" => "CPU 2x 2.4 GHz",
+                                "2" => "RAM 4GB DDR4",
+                                "3" => "Stockage SSD 60GB",
+                                "4" => "Base de données MySQL 1",
+                                "5" => "Trafic illimité",
+                                "6" => "Protection Anti-DDoS",
+                                "7" => "Sauvegardes quotidiennes",
+                                "8" => "Support 24/7"
                             ],
                             "url" => "/gaming-hosting/minecraft/start",
                             "url_message" => "Commandez votre serveur FiveM",
@@ -106,13 +107,15 @@ return [
                             "price_type" => "mois",
                             "description" => "Pour les petits projets",
                             "features" => [
-                                "1" => "1 site web",
-                                "2" => "10 Go d'espace disque",
-                                "3" => "Trafic illimité",
-                                "4" => "Certificat SSL gratuit",
-                                "5" => "Protection Anti-DDoS",
-                                "6" => "Sauvegardes quotidiennes",
-                                "7" => "Support 24/7"
+                                "1" => "CPU 1x 2.4 GHz",
+                                "2" => "RAM 2GB DDR4",
+                                "3" => "Stockage SSD 20GB",
+                                "4" => "Base de données MySQL 1",
+                                "5" => "Trafic illimité",
+                                "6" => "Protection Anti-DDoS",
+                                "7" => "Activation instantanée",
+                                "8" => "Sauvegardes quotidiennes",
+                                "9" => "Support 24/7"
                             ],
                             "url" => "/gaming-hosting/fivem/start",
                             "url_message" => "Commandez votre serveur FiveM",

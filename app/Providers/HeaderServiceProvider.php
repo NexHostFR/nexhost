@@ -34,11 +34,11 @@ class HeaderServiceProvider extends ServiceProvider
             );
             $GroupProduct = array(
                 "web" => array(
-                    "domaines" => array(
+                    /*"domaines" => array(
                         "name" => "Domaines",
                         "description" => "Trouvez le nom de domaine idéal",
                         "slug" => "/domaines",
-                    ),
+                    ),*/
                     "hebergement" => array(
                         "name" => "Hébergement Web",
                         "description" => "Hébergez votre site web",
