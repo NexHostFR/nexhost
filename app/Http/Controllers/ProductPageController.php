@@ -6,15 +6,18 @@ use Illuminate\Http\Request;
 
 class ProductPageController extends Controller
 {   
-    private $url;
+    private $url = null;
     private $offres;
 
     public function __construct(Request $request) {
         $url = array_slice(explode('/', $request->getRequestUri()), 1);
-        $this->url = [
-            'categorys' => $url[0],
-            'produit' => $url[1]
-        ];
+        var_dump($url);
+        if(!empty($url)) {
+            $this->url = [
+                'categorys' => $url[0],
+                'produit' => $url[1]
+            ];
+        }
 
         $this->offres = config("global.categorie.".$this->url['categorys'].".group_list.".$this->url['produit']);
         
