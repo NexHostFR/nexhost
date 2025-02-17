@@ -67,10 +67,10 @@ return [
                     "description_head" => "Serveur Minecraft de qualité, avec un support de qualité.",
                     "30j" => true,
                     "product_list" => array(
-                        "start" => [
-                            "title" => "Start",
-                            "price_format" => "1.99",
-                            "price_cents" => "199",
+                        "CreeperCloud" => [
+                            "title" => "CreeperCloud",
+                            "price_format" => "2.99",
+                            "price_cents" => "299",
                             "price_currency" => "€",
                             "period" => "mois",
                             "price_type" => "mois",
@@ -78,7 +78,7 @@ return [
                             "features" => [
                                 "1" => "CPU 2x 2.4 GHz",
                                 "2" => "RAM 4GB DDR4",
-                                "3" => "Stockage SSD 60GB",
+                                "3" => "Stockage SSD 32GB",
                                 "4" => "Base de données MySQL 1",
                                 "5" => "Trafic illimité",
                                 "6" => "Protection Anti-DDoS",
@@ -89,6 +89,117 @@ return [
                             "url_message" => "Commandez votre serveur FiveM",
                             "highlight" => true
                         ],
+                        "ZombieCloud" => [
+                            "title" => "ZombieCloud",
+                            "price_format" => "4.99",
+                            "price_cents" => "499",
+                            "price_currency" => "€",
+                            "period" => "mois",
+                            "price_type" => "mois",
+                            "description" => "Pour les petits projets",
+                            "features" => [
+                                "1" => "CPU 2x 2.4 GHz",
+                                "2" => "RAM 6GB DDR4",
+                                "3" => "Stockage SSD 64GB",
+                                "4" => "Base de données MySQL 3",
+                                "5" => "Trafic illimité",
+                                "6" => "Protection Anti-DDoS",
+                                "7" => "Sauvegardes quotidiennes",
+                                "8" => "Support 24/7"
+                            ],
+                            "url" => "/gaming-hosting/minecraft/start",
+                            "url_message" => "Commandez votre serveur FiveM",
+                            "highlight" => true
+                        ],
+                        "BlazeCloud" => [
+                            "title" => "BlazeCloud",
+                            "price_format" => "9.99",
+                            "price_cents" => "999",
+                            "price_currency" => "€",
+                            "period" => "mois",
+                            "price_type" => "mois",
+                            "description" => "Pour les petits projets",
+                            "features" => [
+                                "1" => "CPU 2x 2.4 GHz",
+                                "2" => "RAM 12GB DDR4",
+                                "3" => "Stockage SSD 90GB",
+                                "4" => "Base de données MySQL 5",
+                                "5" => "Trafic illimité",
+                                "6" => "Protection Anti-DDoS",
+                                "7" => "Sauvegardes quotidiennes",
+                                "8" => "Support 24/7"
+                            ],
+                            "url" => "/gaming-hosting/minecraft/start",
+                            "url_message" => "Commandez votre serveur FiveM",
+                            "highlight" => true
+                        ],
+                        "SpiderCloud" => [
+                            "title" => "SpiderCloud",
+                            "price_format" => "19.99",
+                            "price_cents" => "1999",
+                            "price_currency" => "€",
+                            "period" => "mois",
+                            "price_type" => "mois",
+                            "description" => "Pour les petits projets",
+                            "features" => [
+                                "1" => "CPU 2x 2.4 GHz",
+                                "2" => "RAM 24GB DDR4",
+                                "3" => "Stockage SSD 128GB",
+                                "4" => "Base de données MySQL 10",
+                                "5" => "Trafic illimité",
+                                "6" => "Protection Anti-DDoS",
+                                "7" => "Sauvegardes quotidiennes",
+                                "8" => "Support 24/7"
+                            ],
+                            "url" => "/gaming-hosting/minecraft/start",
+                            "url_message" => "Commandez votre serveur FiveM",
+                            "highlight" => true
+                        ],
+                        "SpiderCloud" => [
+                            "title" => "SpiderCloud",
+                            "price_format" => "19.99",
+                            "price_cents" => "1999",
+                            "price_currency" => "€",
+                            "period" => "mois",
+                            "price_type" => "mois",
+                            "description" => "Pour les petits projets",
+                            "features" => [
+                                "1" => "CPU 2x 2.4 GHz",
+                                "2" => "RAM 24GB DDR4",
+                                "3" => "Stockage SSD 128GB",
+                                "4" => "Base de données MySQL 10",
+                                "5" => "Trafic illimité",
+                                "6" => "Protection Anti-DDoS",
+                                "7" => "Sauvegardes quotidiennes",
+                                "8" => "Support 24/7"
+                            ],
+                            "url" => "/gaming-hosting/minecraft/start",
+                            "url_message" => "Commandez votre serveur FiveM",
+                            "highlight" => true
+                        ],
+                        "EnderCloud" => [
+                            "title" => "EnderCloud",
+                            "price_format" => "24.90",
+                            "price_cents" => "2490",
+                            "price_currency" => "€",
+                            "period" => "mois",
+                            "price_type" => "mois",
+                            "description" => "Pour les petits projets",
+                            "features" => [
+                                "1" => "CPU 2x 2.4 GHz",
+                                "2" => "RAM 32GB DDR4",
+                                "3" => "Stockage SSD 190GB",
+                                "4" => "Base de données MySQL 20",
+                                "5" => "Trafic illimité",
+                                "6" => "Protection Anti-DDoS",
+                                "7" => "Sauvegardes quotidiennes",
+                                "8" => "Support 24/7"
+                            ],
+                            "url" => "/gaming-hosting/minecraft/start",
+                            "url_message" => "Commandez votre serveur FiveM",
+                            "highlight" => false
+                        ],
+                        
                     )
                 ],
                 "fivem" => [
