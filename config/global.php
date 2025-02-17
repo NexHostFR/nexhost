@@ -98,14 +98,14 @@ return [
                     "description_head" => "Serveur FiveM de qualité, avec un support de qualité.",
                     "30j" => true,
                     "product_list" => array(
-                        "start" => [
-                            "title" => "Start",
-                            "price_format" => "1.99",
-                            "price_cents" => "199",
+                        "fivedev" => [
+                            "title" => "FiveDev",
+                            "price_format" => "0.90",
+                            "price_cents" => "090",
                             "price_currency" => "€",
                             "period" => "mois",
                             "price_type" => "mois",
-                            "description" => "Pour les petits projets",
+                            "description" => "Pour le dev",
                             "features" => [
                                 "1" => "CPU 1x 2.4 GHz",
                                 "2" => "RAM 2GB DDR4",
@@ -115,11 +115,84 @@ return [
                                 "6" => "Protection Anti-DDoS",
                                 "7" => "Activation instantanée",
                                 "8" => "Sauvegardes quotidiennes",
-                                "9" => "Support 24/7"
+                                "9" => "Support 24/7",
+                                "10" => "Activation Clé Argentum"
                             ],
                             "url" => "/gaming-hosting/fivem/start",
                             "url_message" => "Commandez votre serveur FiveM",
                             "highlight" => true
+                        ],
+                        "fiveSmart" => [
+                            "title" => "FiveSmart",
+                            "price_format" => "2.80",
+                            "price_cents" => "199",
+                            "price_currency" => "€",
+                            "period" => "mois",
+                            "price_type" => "mois",
+                            "description" => "Pour les petits projets",
+                            "features" => [
+                                "1" => "CPU 1x 2.4 GHz",
+                                "2" => "RAM 5GB DDR4",
+                                "3" => "Stockage SSD 65GB",
+                                "4" => "Base de données MySQL 4",
+                                "5" => "Trafic illimité",
+                                "6" => "Protection Anti-DDoS",
+                                "7" => "Activation instantanée",
+                                "8" => "Sauvegardes quotidiennes",
+                                "9" => "Support 24/7",
+                                "10" => "Activation Clé Argentum"
+                            ],
+                            "url" => "/gaming-hosting/fivem/start",
+                            "url_message" => "Commandez votre serveur FiveM",
+                            "highlight" => true
+                        ],
+                        "FivePlus" => [
+                            "title" => "FivePlus",
+                            "price_format" => "4.80",
+                            "price_cents" => "199",
+                            "price_currency" => "€",
+                            "period" => "mois",
+                            "price_type" => "mois",
+                            "description" => "Pour les petits projets",
+                            "features" => [
+                                "1" => "CPU 1x 2.4 GHz",
+                                "2" => "RAM 12GB DDR4",
+                                "3" => "Stockage SSD 90GB",
+                                "4" => "Base de données MySQL 5",
+                                "5" => "Trafic illimité",
+                                "6" => "Protection Anti-DDoS",
+                                "7" => "Activation instantanée",
+                                "8" => "Sauvegardes quotidiennes",
+                                "9" => "Support 24/7",
+                                "10" => "Activation Clé Argentum"
+                            ],
+                            "url" => "/gaming-hosting/fivem/start",
+                            "url_message" => "Commandez votre serveur FiveM",
+                            "highlight" => true
+                        ],
+                        "FivePro" => [
+                            "title" => "FivePro",
+                            "price_format" => "19.80",
+                            "price_cents" => "199",
+                            "price_currency" => "€",
+                            "period" => "mois",
+                            "price_type" => "mois",
+                            "description" => "Pour les petits projets",
+                            "features" => [
+                                "1" => "CPU 1x 2.4 GHz",
+                                "2" => "RAM 24GB DDR4",
+                                "3" => "Stockage SSD 130GB",
+                                "4" => "Base de données MySQL 10",
+                                "5" => "Trafic illimité",
+                                "6" => "Protection Anti-DDoS",
+                                "7" => "Activation instantanée",
+                                "8" => "Sauvegardes quotidiennes",
+                                "9" => "Support 24/7",
+                                "10" => "Activation Clé Argentum"
+                            ],
+                            "url" => "/gaming-hosting/fivem/start",
+                            "url_message" => "Commandez votre serveur FiveM",
+                            "highlight" => false
                         ],
                     )
                 ]

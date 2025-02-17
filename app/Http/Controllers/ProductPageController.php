@@ -11,7 +11,6 @@ class ProductPageController extends Controller
 
     public function __construct(Request $request) {
         $url = array_slice(explode('/', $request->getRequestUri()), 1);
-        var_dump($url);
         if(!empty($url)) {
             $this->url = [
                 'categorys' => $url[0],
