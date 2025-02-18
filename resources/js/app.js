@@ -25,6 +25,8 @@ document.addEventListener('DOMContentLoaded', function() {
         document.querySelectorAll(".menu").forEach(function(menu) {
             menu.classList.add('hidden');
         });
+        document.querySelector('.menu-burger').classList.remove("translate-x-0");
+        document.querySelector('.menu-burger').classList.add("-translate-x-full");
     });
     document.querySelectorAll('.open-group[aria-expanded]').forEach(function(button) {
         button.addEventListener('click', function() {
@@ -42,5 +44,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 document.querySelector(`#${this.getAttribute('data-group-target')}`).classList.remove('hidden');
             }
         });
+    });
+    document.querySelector('.btn-burger').addEventListener('click', function() {
+        if(this.getAttribute('aria-expanded') != 'true') {
+            document.querySelector('.menu-burger').classList.remove("-translate-x-full");
+            document.querySelector('.menu-burger').classList.add("translate-x-0");
+            this.setAttribute('aria-expanded', 'true');
+        } else {
+            document.querySelector('.menu-burger').classList.remove("translate-x-0");
+            document.querySelector('.menu-burger').classList.add("-translate-x-full");
+            this.setAttribute('aria-expanded', 'false');
+        }
     });
 });

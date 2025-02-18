@@ -1,4 +1,4 @@
-<header class="flex items-center p-3">
+<header class="hidden md:flex items-center p-3">
     <div class="flex flex-wrap items-center justify-between w-screen">
         <div class="flex items-center">
             <a href="/" class="no-underline">
@@ -81,5 +81,26 @@
                 <button class="bg-gray-700 text-white py-2 px-4 rounded hover:bg-gray-800">Espace client</button>
             </a>
         </div>
+    </div>
+</header>
+<header class="md:hidden">
+    <div>
+        <button class="relative group btn-burger" aria-expanded="false">
+          <div class="relative flex overflow-hidden items-center justify-center rounded-full w-[30px] h-[30px] transform transition-all ring-0 ring-gray-300 hover:ring-8 group-focus:ring-4 ring-opacity-30 duration-200 shadow-md">
+            <div class="flex flex-col justify-between w-[10px] h-[10px] transform transition-all duration-300 origin-center overflow-hidden">
+              <div class="bg-slate-700 h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:translate-x-10"></div>
+              <div class="bg-slate-700 h-[2px] w-7 rounded transform transition-all duration-300 group-focus:translate-x-10 delay-75"></div>
+              <div class="bg-slate-700 h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:translate-x-10 delay-150"></div>
+  
+              <div class="absolute items-center justify-between transform transition-all duration-500 top-1 -translate-x-10 group-focus:translate-x-0 flex w-0 group-focus:w-12">
+                <div class="absolute bg-slate-700 h-[1px] w-2.5 transform transition-all duration-500 rotate-0 delay-300 group-focus:rotate-45"></div>
+                <div class="absolute bg-slate-700 h-[1px] w-2.5 transform transition-all duration-500 -rotate-0 delay-300 group-focus:-rotate-45"></div>
+              </div>
+            </div>
+          </div>
+        </button>
+    </div>
+    <div class="menu-burger fixed top-[40px] left-0 h-[calc(100vh-30px)] w-full bg-white shadow-lg transform -translate-x-full transition-transform duration-300 ease-in-out">
+        test
     </div>
 </header>
