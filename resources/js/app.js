@@ -56,4 +56,19 @@ document.addEventListener('DOMContentLoaded', function() {
             this.setAttribute('aria-expanded', 'false');
         }
     });
+    document.querySelectorAll('.btn-sub-menu').forEach(function(element) {
+        element.addEventListener('click', function() {
+            if(this.getAttribute('aria-expanded') != 'true') {
+                document.querySelectorAll('.sub-menu').forEach(function(secondElement) {
+                    secondElement.classList.add('hidden')
+                    secondElement.parentElement.querySelector('button').setAttribute('aria-expanded', 'false');
+                })
+                this.parentElement.querySelector('div').classList.remove('hidden')
+                this.setAttribute('aria-expanded', 'true');
+            } else {
+                this.parentElement.querySelector('div').classList.add('hidden')
+                this.setAttribute('aria-expanded', 'false');
+            }
+        })
+    })
 });

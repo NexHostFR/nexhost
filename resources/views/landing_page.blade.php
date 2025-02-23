@@ -5,7 +5,7 @@
     <div class="flex flex-col md:flex-row py-10 my-10 items-center">
         <div class="md:w-1/2 mx-auto text-center">
             <h1 class="text-4xl font-bold text-gray-900 dark:text-white">NxHost</h1>
-            <p class="mt-4">Découvrez nos offres à petit prix, des hébergements web à partir de 1.99€ par mois. Nous proposons des serveurs très qualitatifs afin de monter votre projet sans aucun problème d'hébergeur.</p>
+            <p class="mt-4">Découvrez nos offres à petit prix, des hébergements à partir de 1.99€ par mois. Nous proposons des serveurs très qualitatifs afin de monter votre projet sans aucun problème d'hébergeur.</p>
         </div>
         {{-- <div class="md:w-1/2 mx-auto mt-8 md:mt-0"> 
             <div class="bg-white shadow-lg rounded-lg p-6">
@@ -78,7 +78,7 @@
             </div>
             <div class="sm:ml-6 w-full sm:w-1/2 mt-6 sm:mt-0">
                 <h2 class="text-2xl font-bold">Votre hébergement partenaire en Europe</h2>
-                <p class="mt-4 text-gray-700">NxHost, votre hébergeur 100% européen, vous offre des solutions de haute performance, optimisées pour WordPress et d'autres CMS ou d'autres projets, à des prix compétitifs. Nos serveurs, situés en Europe, garantissent des performances optimales et une sécurité renforcée pour tous vos projets.
+                <p class="mt-4 text-gray-700">NxHost, votre hébergeur 100% européen, vous offre des solutions de haute performance, à des prix compétitifs. Nos serveurs, situés en Europe, garantissent des performances optimales et une sécurité renforcée pour tous vos projets.
                 <br>
                 NxHost respecte les législations sur la protection des données les plus strictes d'Europe.
                 </p>

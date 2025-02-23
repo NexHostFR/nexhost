@@ -84,23 +84,58 @@
     </div>
 </header>
 <header class="md:hidden">
-    <div>
+    <div class="mx-3">
         <button class="relative group btn-burger" aria-expanded="false">
-          <div class="relative flex overflow-hidden items-center justify-center rounded-full w-[30px] h-[30px] transform transition-all ring-0 ring-gray-300 hover:ring-8 group-focus:ring-4 ring-opacity-30 duration-200 shadow-md">
-            <div class="flex flex-col justify-between w-[10px] h-[10px] transform transition-all duration-300 origin-center overflow-hidden">
-              <div class="bg-slate-700 h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:translate-x-10"></div>
-              <div class="bg-slate-700 h-[2px] w-7 rounded transform transition-all duration-300 group-focus:translate-x-10 delay-75"></div>
-              <div class="bg-slate-700 h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:translate-x-10 delay-150"></div>
-  
-              <div class="absolute items-center justify-between transform transition-all duration-500 top-1 -translate-x-10 group-focus:translate-x-0 flex w-0 group-focus:w-12">
-                <div class="absolute bg-slate-700 h-[1px] w-2.5 transform transition-all duration-500 rotate-0 delay-300 group-focus:rotate-45"></div>
-                <div class="absolute bg-slate-700 h-[1px] w-2.5 transform transition-all duration-500 -rotate-0 delay-300 group-focus:-rotate-45"></div>
-              </div>
+            <div class="relative flex overflow-hidden items-center justify-center rounded-full w-[30px] h-[30px] transform transition-all ring-0 ring-gray-300 hover:ring-8 group-focus:ring-4 ring-opacity-30 duration-200 shadow-md">
+                <div class="flex flex-col justify-between w-[10px] h-[10px] transform transition-all duration-300 origin-center overflow-hidden">
+                    <div class="bg-slate-700 h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:translate-x-10"></div>
+                    <div class="bg-slate-700 h-[2px] w-7 rounded transform transition-all duration-300 group-focus:translate-x-10 delay-75"></div>
+                    <div class="bg-slate-700 h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:translate-x-10 delay-150"></div>
+    
+                    <div class="absolute items-center justify-between transform transition-all duration-500 top-1 -translate-x-10 group-focus:translate-x-0 flex w-0 group-focus:w-12">
+                        <div class="absolute bg-slate-700 h-[1px] w-2.5 transform transition-all duration-500 rotate-0 delay-300 group-focus:rotate-45"></div>
+                        <div class="absolute bg-slate-700 h-[1px] w-2.5 transform transition-all duration-500 -rotate-0 delay-300 group-focus:-rotate-45"></div>
+                    </div>
+                </div>
             </div>
-          </div>
         </button>
     </div>
     <div class="menu-burger fixed top-[40px] left-0 h-[calc(100vh-30px)] w-full bg-white shadow-lg transform -translate-x-full transition-transform duration-300 ease-in-out">
-        test
+        <div class="flex items-center">
+            <a href="/" class="no-underline">
+                <img src="/asset/img/logo.png" alt="Logo de NxHost" class="h-16">
+            </a>
+            <h1 class="font-semibold">NxHost</h1>
+        </div>
+        <div>
+            @foreach ($CategoriesProduct as $Categorie)
+                <div class="px-4 py-3">
+                    <button type="button" class="inline-flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900 btn-sub-menu" aria-expanded="false">
+                        <span>{{ $Categorie['name'] }}</span>
+                        <svg class="size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                            <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                    <div class="hidden block sub-menu">
+                        @foreach ($GroupProduct[$Categorie['type']] as $GroupeListe)
+                            <div class="p-2">
+                                <div class="group relative flex gap-x-6 rounded-lg p-2 hover:bg-gray-50">
+                                    <div>
+                                        <a href="{{$GroupeListe['slug']}}" class="font-semibold text-gray-900 group-hover:text-gray-500 text-sm">
+                                            {{$GroupeListe['name']}}
+                                            <span class="absolute inset-0"></span>
+                                        </a>
+                                        <p class="text-gray-600 text-sm">{{$GroupeListe['description']}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
+            @endforeach
+            <a target="_blank" href="https://manager.NxHost.fr" class="px-6">
+                <button class="bg-gray-700 text-white py-2 mt-5 rounded hover:bg-gray-800 w-11/12">Espace client</button>
+            </a>
+        </div>
     </div>
 </header>
