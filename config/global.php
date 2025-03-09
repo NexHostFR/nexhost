@@ -85,9 +85,9 @@ return [
                                 "7" => "Sauvegardes quotidiennes",
                                 "8" => "Support 24/7"
                             ],
-                            "url" => "/gaming-hosting/minecraft/start",
+                            "url" => "gaming-hosting/minecraft/CreeperCloud",
                             "url_message" => "Commandez votre serveur FiveM",
-                            "highlight" => true
+                            "highlight" => false
                         ],
                         "ZombieCloud" => [
                             "title" => "ZombieCloud",
@@ -107,9 +107,9 @@ return [
                                 "7" => "Sauvegardes quotidiennes",
                                 "8" => "Support 24/7"
                             ],
-                            "url" => "/gaming-hosting/minecraft/start",
+                            "url" => "gaming-hosting/minecraft/ZombieCloud",
                             "url_message" => "Commandez votre serveur FiveM",
-                            "highlight" => true
+                            "highlight" => false
                         ],
                         "BlazeCloud" => [
                             "title" => "BlazeCloud",
@@ -129,9 +129,9 @@ return [
                                 "7" => "Sauvegardes quotidiennes",
                                 "8" => "Support 24/7"
                             ],
-                            "url" => "/gaming-hosting/minecraft/start",
+                            "url" => "gaming-hosting/minecraft/BlazeCloud",
                             "url_message" => "Commandez votre serveur FiveM",
-                            "highlight" => true
+                            "highlight" => false
                         ],
                         "SpiderCloud" => [
                             "title" => "SpiderCloud",
@@ -151,9 +151,9 @@ return [
                                 "7" => "Sauvegardes quotidiennes",
                                 "8" => "Support 24/7"
                             ],
-                            "url" => "/gaming-hosting/minecraft/start",
+                            "url" => "gaming-hosting/minecraft/SpiderCloud",
                             "url_message" => "Commandez votre serveur FiveM",
-                            "highlight" => true
+                            "highlight" => false
                         ],
                         "SpiderCloud" => [
                             "title" => "SpiderCloud",
@@ -173,9 +173,9 @@ return [
                                 "7" => "Sauvegardes quotidiennes",
                                 "8" => "Support 24/7"
                             ],
-                            "url" => "/gaming-hosting/minecraft/start",
+                            "url" => "gaming-hosting/minecraft/SpiderCloud",
                             "url_message" => "Commandez votre serveur FiveM",
-                            "highlight" => true
+                            "highlight" => false
                         ],
                         "EnderCloud" => [
                             "title" => "EnderCloud",
@@ -195,7 +195,7 @@ return [
                                 "7" => "Sauvegardes quotidiennes",
                                 "8" => "Support 24/7"
                             ],
-                            "url" => "/gaming-hosting/minecraft/start",
+                            "url" => "gaming-hosting/minecraft/EnderCloud",
                             "url_message" => "Commandez votre serveur FiveM",
                             "highlight" => false
                         ],
@@ -229,9 +229,9 @@ return [
                                 "9" => "Support 24/7",
                                 "10" => "Activation Clé Argentum"
                             ],
-                            "url" => "/gaming-hosting/fivem/start",
+                            "url" => "gaming-hosting/fivem/FiveDev",
                             "url_message" => "Commandez votre serveur FiveM",
-                            "highlight" => true
+                            "highlight" => false
                         ],
                         "fiveSmart" => [
                             "title" => "FiveSmart",
@@ -253,9 +253,9 @@ return [
                                 "9" => "Support 24/7",
                                 "10" => "Activation Clé Argentum"
                             ],
-                            "url" => "/gaming-hosting/fivem/start",
+                            "url" => "gaming-hosting/fivem/FiveSmart",
                             "url_message" => "Commandez votre serveur FiveM",
-                            "highlight" => true
+                            "highlight" => false
                         ],
                         "FivePlus" => [
                             "title" => "FivePlus",
@@ -277,9 +277,9 @@ return [
                                 "9" => "Support 24/7",
                                 "10" => "Activation Clé Argentum"
                             ],
-                            "url" => "/gaming-hosting/fivem/start",
+                            "url" => "gaming-hosting/fivem/FivePro",
                             "url_message" => "Commandez votre serveur FiveM",
-                            "highlight" => true
+                            "highlight" => false
                         ],
                         "FivePro" => [
                             "title" => "FivePro",
@@ -301,7 +301,7 @@ return [
                                 "9" => "Support 24/7",
                                 "10" => "Activation Clé Argentum"
                             ],
-                            "url" => "/gaming-hosting/fivem/start",
+                            "url" => "gaming-hosting/fivem/FivePro",
                             "url_message" => "Commandez votre serveur FiveM",
                             "highlight" => false
                         ],
