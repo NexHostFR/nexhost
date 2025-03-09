@@ -23,10 +23,10 @@ class HeaderServiceProvider extends ServiceProvider
     {
         View::composer('partials.header', function($view) {
             $CategoriesProduct = array(
-                array(
+                /*array(
                     "name" => "Web et Domaines",
                     "type" => "web",
-                ),
+                ),*/
                 array(
                     "name" => "Gaming",
                     "type" => "gaming",
