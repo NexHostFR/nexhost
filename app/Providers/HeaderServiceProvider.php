@@ -38,12 +38,12 @@ class HeaderServiceProvider extends ServiceProvider
                         "name" => "Domaines",
                         "description" => "Trouvez le nom de domaine idéal",
                         "slug" => "/domaines",
-                    ),*/
+                    ),
                     "hebergement" => array(
                         "name" => "Hébergement Web",
                         "description" => "Hébergez votre site web",
                         "slug" => "/hebergement/web",
-                    )
+                    )*/
                 ),
                 "gaming" => array(
                     "fivem" => array(
