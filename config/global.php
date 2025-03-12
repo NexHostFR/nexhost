@@ -155,28 +155,6 @@ return [
                             "url_message" => "Commandez votre serveur FiveM",
                             "highlight" => false
                         ],
-                        "SpiderCloud" => [
-                            "title" => "SpiderCloud",
-                            "price_format" => "19.99",
-                            "price_cents" => "1999",
-                            "price_currency" => "€",
-                            "period" => "mois",
-                            "price_type" => "mois",
-                            "description" => "Pour les petits projets",
-                            "features" => [
-                                "1" => "CPU 2x 2.4 GHz",
-                                "2" => "RAM 24GB DDR4",
-                                "3" => "Stockage SSD 128GB",
-                                "4" => "Base de données MySQL 10",
-                                "5" => "Trafic illimité",
-                                "6" => "Protection Anti-DDoS",
-                                "7" => "Sauvegardes quotidiennes",
-                                "8" => "Support 24/7"
-                            ],
-                            "url" => "game-hosting/minecraft/SpiderCloud",
-                            "url_message" => "Commandez votre serveur FiveM",
-                            "highlight" => false
-                        ],
                         "EnderCloud" => [
                             "title" => "EnderCloud",
                             "price_format" => "24.90",
@@ -209,7 +187,7 @@ return [
                     "description_head" => "Serveur FiveM de qualité, avec un support de qualité.",
                     "30j" => true,
                     "product_list" => array(
-                        "fivedev" => [
+                        "fiveDev" => [
                             "title" => "FiveDev",
                             "price_format" => "0.90",
                             "price_cents" => "090",
@@ -235,7 +213,7 @@ return [
                         ],
                         "fiveSmart" => [
                             "title" => "FiveSmart",
-                            "price_format" => "2.80",
+                            "price_format" => "1.99",
                             "price_cents" => "199",
                             "price_currency" => "€",
                             "period" => "mois",
@@ -259,8 +237,8 @@ return [
                         ],
                         "FivePlus" => [
                             "title" => "FivePlus",
-                            "price_format" => "4.80",
-                            "price_cents" => "199",
+                            "price_format" => "3.99",
+                            "price_cents" => "399",
                             "price_currency" => "€",
                             "period" => "mois",
                             "price_type" => "mois",
@@ -283,8 +261,8 @@ return [
                         ],
                         "FivePro" => [
                             "title" => "FivePro",
-                            "price_format" => "19.80",
-                            "price_cents" => "199",
+                            "price_format" => "19.99",
+                            "price_cents" => "1999",
                             "price_currency" => "€",
                             "period" => "mois",
                             "price_type" => "mois",
