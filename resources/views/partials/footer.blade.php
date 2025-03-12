@@ -44,7 +44,7 @@
 
         <div class="border-t pt-5 pb-8">
             <div class="flex justify-between items-center">
-                <span class="text-gray-600">&copy; 2024 NxHost</span>
+                <span class="text-gray-600">&copy; 2025 NxHost</span>
                 <div class="flex space-x-4">
                     <a href="/cgv/mentions-legales" class="text-gray-600 hover:underline">Mentions légales</a>
                     <a href="/cgv/protection-donnes" class="text-gray-600 hover:underline">Protection des données</a>
