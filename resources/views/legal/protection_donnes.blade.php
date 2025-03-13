@@ -1,7 +1,7 @@
-{% extends "base.html.twig" %}
+@extends('base')
 
-{% block body %}
+@section('body')
 <main>
-    
+    test
 </main>
-{% endblock %}
+@endsection
