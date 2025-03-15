@@ -2,13 +2,6 @@
 
 @section('body')
 <main>
-    test
-</main>
-@endsection
-@extends('base')
-
-@section('body')
-<main>
     <section class="mentions-legales">
         <h1>Mentions Légales</h1>
         
