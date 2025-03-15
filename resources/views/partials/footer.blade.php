@@ -6,6 +6,9 @@
                     <img src="/asset/img/logo.png" alt="Logo de NxHost">
                 </div>
                 <div class="flex space-x-4">
+                    <a href="https://discord.gg/wNeFaayTNV" class="text-gray-600 hover:text-blue-500" target="_blank">
+                        <i class="bi bi-discord"></i>
+                    </a>
                     <a href="https://twitter.com/NxHostFR" class="text-gray-600 hover:text-blue-500" target="_blank">
                         <i class="bi bi-twitter"></i>
                     </a>
