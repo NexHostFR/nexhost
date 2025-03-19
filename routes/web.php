@@ -5,6 +5,7 @@ use App\Http\Controllers\ContactCommercialController;
 use App\Http\Controllers\LandingPageController;
 use App\Http\Controllers\LegalPageController;
 use App\Http\Controllers\ProductPageController;
+use App\Http\Controllers\SitemapController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -35,6 +36,9 @@ Route::get('/cgv/condition-general', [LegalPageController::class, 'document_lega
 Route::get("/cgv/mentions-legales", [LegalPageController::class, 'mentions_legales']);
 Route::get("/cgv/protection-donnes", [LegalPageController::class, 'protection_donnes']);
 Route::get("/cgv/politique-confidentilite", [LegalPageController::class, 'politique_confidentilite']);
+
+// Sitemap
+Route::get("/sitemap.xml", [SitemapController::class, 'index']);
 
 // Produit
 Route::get('/{category}/{produit}', [ProductPageController::class, 'index']);
