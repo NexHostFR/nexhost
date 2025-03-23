@@ -71,7 +71,7 @@
                                 <h3 class="px-4 font-bold">Support et contact</h3>
                                 <div class="">
                                     <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
-                                        <a href="/contact" class="font-semibold text-gray-900 group-hover:text-gray-500">Contactez-nous</a>
+                                        <a href="/sales" class="font-semibold text-gray-900 group-hover:text-gray-500">Contactez-nous</a>
                                     </div>
                                 </div>
                             </div>

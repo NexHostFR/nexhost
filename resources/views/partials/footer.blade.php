@@ -6,6 +6,9 @@
                     <img src="/asset/img/logo.png" alt="Logo de NxHost">
                 </div>
                 <div class="flex space-x-4">
+                    <a href="https://discord.gg/wNeFaayTNV" class="text-gray-600 hover:text-blue-500" target="_blank">
+                        <i class="bi bi-discord"></i>
+                    </a>
                     <a href="https://twitter.com/NxHostFR" class="text-gray-600 hover:text-blue-500" target="_blank">
                         <i class="bi bi-twitter"></i>
                     </a>
@@ -44,7 +47,7 @@
 
         <div class="border-t pt-5 pb-8">
             <div class="flex justify-between items-center">
-                <span class="text-gray-600">&copy; 2024 NxHost</span>
+                <span class="text-gray-600">&copy; 2025 NxHost</span>
                 <div class="flex space-x-4">
                     <a href="/cgv/mentions-legales" class="text-gray-600 hover:underline">Mentions légales</a>
                     <a href="/cgv/protection-donnes" class="text-gray-600 hover:underline">Protection des données</a>

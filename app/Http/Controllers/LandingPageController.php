@@ -33,7 +33,7 @@ class LandingPageController extends Controller
         );
         return view('landing_page', [
             'ListeInformations' => $ListeInformations,
-            'description' => "Bienvenue sur notre site web"
+            'description' => "NxHost, l'hébergeur éthique et eco-responsable - Nous cherchons a vous fournir une infrastructure de qualités à des prix compétitif. Support local et accessible 7/7"
         ]);
     }
 

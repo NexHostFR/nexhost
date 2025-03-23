@@ -67,6 +67,29 @@ return [
                     "description_head" => "Serveur Minecraft de qualité, avec un support de qualité.",
                     "30j" => true,
                     "product_list" => array(
+                        "FreeCloud" => [
+                            "title"=> "Essaie Gratuit",
+                            "price_format" => "0.00",
+                            "price_cents" => "000",
+                            "price_currency" => "€",
+                            "type" => "essaie",
+                            "period" => "mois",
+                            "price_type"=> "mois",
+                            "description" => "Pour tester nos offres obtener un essaie gratuit de 48h.",
+                            "features" => [
+                                "1" => "CPU 2x 2.4 GHz",
+                                "2" => "RAM 4GB DDR4",
+                                "3" => "Stockage SSD 32GB",
+                                "4" => "Base de données MySQL 1",
+                                "5" => "Trafic illimité",
+                                "6" => "Protection Anti-DDoS",
+                                "7" => "Sauvegardes quotidiennes",
+                                "8" => "Support 24/7"
+                            ],
+                            "url" => "game-hosting/minecraft/FreeCloud",
+                            "url_message" => "Commandez votre essaie gratuit",
+                            "highlight" => true
+                        ],
                         "CreeperCloud" => [
                             "title" => "CreeperCloud",
                             "price_format" => "2.99",
@@ -85,9 +108,9 @@ return [
                                 "7" => "Sauvegardes quotidiennes",
                                 "8" => "Support 24/7"
                             ],
-                            "url" => "/gaming-hosting/minecraft/start",
-                            "url_message" => "Commandez votre serveur FiveM",
-                            "highlight" => true
+                            "url" => "game-hosting/minecraft/CreeperCloud",
+                            "url_message" => "Commandez votre serveur Minecraft",
+                            "highlight" => false
                         ],
                         "ZombieCloud" => [
                             "title" => "ZombieCloud",
@@ -107,9 +130,9 @@ return [
                                 "7" => "Sauvegardes quotidiennes",
                                 "8" => "Support 24/7"
                             ],
-                            "url" => "/gaming-hosting/minecraft/start",
-                            "url_message" => "Commandez votre serveur FiveM",
-                            "highlight" => true
+                            "url" => "game-hosting/minecraft/ZombieCloud",
+                            "url_message" => "Commandez votre serveur Minecraft",
+                            "highlight" => false
                         ],
                         "BlazeCloud" => [
                             "title" => "BlazeCloud",
@@ -129,9 +152,9 @@ return [
                                 "7" => "Sauvegardes quotidiennes",
                                 "8" => "Support 24/7"
                             ],
-                            "url" => "/gaming-hosting/minecraft/start",
-                            "url_message" => "Commandez votre serveur FiveM",
-                            "highlight" => true
+                            "url" => "game-hosting/minecraft/BlazeCloud",
+                            "url_message" => "Commandez votre serveur Minecraft",
+                            "highlight" => false
                         ],
                         "SpiderCloud" => [
                             "title" => "SpiderCloud",
@@ -151,31 +174,9 @@ return [
                                 "7" => "Sauvegardes quotidiennes",
                                 "8" => "Support 24/7"
                             ],
-                            "url" => "/gaming-hosting/minecraft/start",
-                            "url_message" => "Commandez votre serveur FiveM",
-                            "highlight" => true
-                        ],
-                        "SpiderCloud" => [
-                            "title" => "SpiderCloud",
-                            "price_format" => "19.99",
-                            "price_cents" => "1999",
-                            "price_currency" => "€",
-                            "period" => "mois",
-                            "price_type" => "mois",
-                            "description" => "Pour les petits projets",
-                            "features" => [
-                                "1" => "CPU 2x 2.4 GHz",
-                                "2" => "RAM 24GB DDR4",
-                                "3" => "Stockage SSD 128GB",
-                                "4" => "Base de données MySQL 10",
-                                "5" => "Trafic illimité",
-                                "6" => "Protection Anti-DDoS",
-                                "7" => "Sauvegardes quotidiennes",
-                                "8" => "Support 24/7"
-                            ],
-                            "url" => "/gaming-hosting/minecraft/start",
-                            "url_message" => "Commandez votre serveur FiveM",
-                            "highlight" => true
+                            "url" => "game-hosting/minecraft/SpiderCloud",
+                            "url_message" => "Commandez votre serveur Minecraft",
+                            "highlight" => false
                         ],
                         "EnderCloud" => [
                             "title" => "EnderCloud",
@@ -195,8 +196,8 @@ return [
                                 "7" => "Sauvegardes quotidiennes",
                                 "8" => "Support 24/7"
                             ],
-                            "url" => "/gaming-hosting/minecraft/start",
-                            "url_message" => "Commandez votre serveur FiveM",
+                            "url" => "game-hosting/minecraft/EnderCloud",
+                            "url_message" => "Commandez votre serveur Minecraft",
                             "highlight" => false
                         ],
                         
@@ -209,7 +210,32 @@ return [
                     "description_head" => "Serveur FiveM de qualité, avec un support de qualité.",
                     "30j" => true,
                     "product_list" => array(
-                        "fivedev" => [
+                        "fiveFree" => [
+                            "title" => "Essaie gratuit",
+                            "price_format" => "0.00",
+                            "price_cents" => "000",
+                            "price_currency" => "€",
+                            "type" => "essaie",
+                            "period" => "mois",
+                            "price_type" => "mois",
+                            "description" => "Pour tester notre offre, obtenir un essaie gratuit de 48h.",
+                            "features" => [
+                                "1" => "CPU 1x 2.4 GHz",
+                                "2" => "RAM 2GB DDR4",
+                                "3" => "Stockage SSD 20GB",
+                                "4" => "Base de données MySQL 1",
+                                "5" => "Trafic illimité",
+                                "6" => "Protection Anti-DDoS",
+                                "7" => "Activation instantanée",
+                                "8" => "Sauvegardes quotidiennes",
+                                "9" => "Support 24/7",
+                                "10" => "Activation Clé Argentum"
+                            ],
+                            "url" => "game-hosting/fivem/FiveFree",
+                            "url_message" => "Commandez votre essaie gratuit Fivem",
+                            "highlight" => true
+                        ],
+                        "fiveDev" => [
                             "title" => "FiveDev",
                             "price_format" => "0.90",
                             "price_cents" => "090",
@@ -229,13 +255,13 @@ return [
                                 "9" => "Support 24/7",
                                 "10" => "Activation Clé Argentum"
                             ],
-                            "url" => "/gaming-hosting/fivem/start",
+                            "url" => "game-hosting/fivem/FiveDev",
                             "url_message" => "Commandez votre serveur FiveM",
-                            "highlight" => true
+                            "highlight" => false
                         ],
                         "fiveSmart" => [
                             "title" => "FiveSmart",
-                            "price_format" => "2.80",
+                            "price_format" => "1.99",
                             "price_cents" => "199",
                             "price_currency" => "€",
                             "period" => "mois",
@@ -253,14 +279,14 @@ return [
                                 "9" => "Support 24/7",
                                 "10" => "Activation Clé Argentum"
                             ],
-                            "url" => "/gaming-hosting/fivem/start",
+                            "url" => "game-hosting/fivem/FiveSmart",
                             "url_message" => "Commandez votre serveur FiveM",
-                            "highlight" => true
+                            "highlight" => false
                         ],
                         "FivePlus" => [
                             "title" => "FivePlus",
-                            "price_format" => "4.80",
-                            "price_cents" => "199",
+                            "price_format" => "3.99",
+                            "price_cents" => "399",
                             "price_currency" => "€",
                             "period" => "mois",
                             "price_type" => "mois",
@@ -277,14 +303,14 @@ return [
                                 "9" => "Support 24/7",
                                 "10" => "Activation Clé Argentum"
                             ],
-                            "url" => "/gaming-hosting/fivem/start",
+                            "url" => "game-hosting/fivem/FivePro",
                             "url_message" => "Commandez votre serveur FiveM",
-                            "highlight" => true
+                            "highlight" => false
                         ],
                         "FivePro" => [
                             "title" => "FivePro",
-                            "price_format" => "19.80",
-                            "price_cents" => "199",
+                            "price_format" => "19.99",
+                            "price_cents" => "1999",
                             "price_currency" => "€",
                             "period" => "mois",
                             "price_type" => "mois",
@@ -301,7 +327,7 @@ return [
                                 "9" => "Support 24/7",
                                 "10" => "Activation Clé Argentum"
                             ],
-                            "url" => "/gaming-hosting/fivem/start",
+                            "url" => "game-hosting/fivem/FivePro",
                             "url_message" => "Commandez votre serveur FiveM",
                             "highlight" => false
                         ],
