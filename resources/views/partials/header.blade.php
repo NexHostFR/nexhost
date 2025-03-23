@@ -30,6 +30,7 @@
                                 @foreach ($CategoriesProduct as $Categorie)
                                     <div id="{{$Categorie['url']}}" class="@if($loop->first)  @else hidden @endif productgroup">
                                         @foreach ($GroupProduct as $Group)
+                                        @if ($Group['categorie_parent'] == $Categorie['id'])
                                             <div class="p-4">
                                                 <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
                                                     <div class="mt-1 flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50">
@@ -46,6 +47,7 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                        @endif
                                         @endforeach
                                     </div>
                                 @endforeach
