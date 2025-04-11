@@ -60,7 +60,8 @@ class ProductPageController extends Controller
             [
                 "produit" => $this->offres,
                 "offres" => $this->produit,
-                "description" => "Découvrez nos offres gaming pour tout type de projets, qu'il soit petit, ou avancée."
+                "description" => "Découvrez nos offres gaming pour tout type de projets, qu'il soit petit, ou avancée.",
+                "keywords" => "hebergement, gaming, anti ddos fivem, minecraft hosting, hebergeur serveur minecraft, fivem server, hosting france, hébergeur minecraft, fivem anti ddos, hébergeur fivem gratuit, hebergeur fivem gratuit, hébergeur fivem gratuit 24h"
             ]
             );
     }
