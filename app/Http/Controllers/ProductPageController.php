@@ -56,9 +56,8 @@ class ProductPageController extends Controller
     }
 
     public function HebergementGaming(Request $request, $url) {
-
         return view("product.gaming",
-            [   
+            [
                 "produit" => $this->offres,
                 "offres" => $this->produit,
                 "description" => "Découvrez nos offres gaming pour tout type de projets, qu'il soit petit, ou avancée."
