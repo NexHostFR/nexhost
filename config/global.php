@@ -59,6 +59,7 @@ return [
         ],
         "gaming" => [
             "url" => "gaming",
+            "nom" => "Gaming",
             "group_list" => [
                 "minecraft" => [
                     "title" => "Serveur Minecraft",

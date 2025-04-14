@@ -77,10 +77,11 @@
                 <img class="rounded-lg border-2 border-light" src="/asset/img/europe-carte.jpg" alt="Carte de l'europe obtenue sur pixbay">
             </div>
             <div class="sm:ml-6 w-full sm:w-1/2 mt-6 sm:mt-0">
-                <h2 class="text-2xl font-bold">Votre hébergement partenaire en Europe</h2>
-                <p class="mt-4 text-gray-700">NxHost, votre hébergeur 100% européen, vous offre des solutions de haute performance, à des prix compétitifs. Nos serveurs, situés en Europe, garantissent des performances optimales et une sécurité renforcée pour tous vos projets.
-                <br>
-                NxHost respecte les législations sur la protection des données les plus strictes d'Europe.
+                <h2 class="text-2xl font-bold">Votre hébergeur partenaire en Europe</h2>
+                <p class="mt-4 text-gray-700">
+                  Avec <strong>NxHost</strong>, bénéficiez de solutions d’hébergement hautes performances, entièrement basées en Europe. Nos serveurs garantissent rapidité, fiabilité et sécurité renforcée pour tous vos projets, quel que soit leur envergure.
+                  <br class="mt-2">
+                  En conformité avec les réglementations européennes les plus strictes en matière de protection des données, NxHost vous assure confidentialité et tranquillité d’esprit.
                 </p>
             </div>
         </div>
@@ -123,7 +124,7 @@
                 <?php } ?>
             </div>
         </div>
-    </div>    
+    </div>
     <!-- Section NewsLetter -->
     @include('components.newsletter')
     <!-- Section Support -->

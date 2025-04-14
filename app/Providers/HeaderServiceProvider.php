@@ -23,11 +23,18 @@ class HeaderServiceProvider extends ServiceProvider
     public function boot(): void
     {
         View::composer('partials.header', function($view) {
-            $categorieListe = Categorie::all();
-            $CategoriesProduct = [];
-            $GroupProduct = [];
+            $categorieListe = config('global.categorie');
+            $CategoriesProduct = [
+                "url" => "product",
+                "nom" => "Produits",
+            ];
+            $GroupProduct = [
+                "url" => "gaming",
+                "nom" => "Gaming",
+            ];
             foreach($categorieListe as $categorie) {
-                if(is_null($categorie->categorie_parent)) {
+                var_dump($categorie);
+                if(is_null($categorie['group_list'])) {
                     array_push($CategoriesProduct, $categorie); 
                 } else {
                     array_push($GroupProduct, $categorie);
