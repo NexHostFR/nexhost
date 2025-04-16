@@ -9,5 +9,5 @@ class Categorie extends Model
 {
     use HasFactory;
 
-    protected $connection = "mysql_admin";
+    protected $connection = "mysql";
 }
