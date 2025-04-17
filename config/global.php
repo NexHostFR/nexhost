@@ -303,7 +303,7 @@ return [
                                 "9" => "Support 24/7",
                                 "10" => "Activation Clé Argentum"
                             ],
-                            "url" => "game-hosting/fivem/FivePro",
+                            "url" => "game-hosting/fivem/FivePlus",
                             "url_message" => "Commandez votre serveur FiveM",
                             "highlight" => false
                         ],
