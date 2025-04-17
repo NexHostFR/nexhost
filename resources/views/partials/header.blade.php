@@ -21,15 +21,16 @@
                         <div class="w-screen max-w-3xl min-h-52 flex flex-row overflow-hidden rounded-3xl bg-white text-sm/6 shadow-lg ring-1 ring-gray-900/5">
                             <div class="w-3/12 border-r border-gray-200 flex flex-col items-center p-2">
                                 @foreach ($CategoriesProduct as $Categorie)
-                                    <button class="w-full py-2 text-left font-semibold text-gray-900 hover:bg-gray-50 px-4 my-1 rounded-lg open-group" aria-expanded="@if($loop->first) true @else false @endif" data-group-target="{{$Categorie['type']}}">
-                                        {{ $Categorie['name'] }}
+                                    <button class="w-full py-2 text-left font-semibold text-gray-900 hover:bg-gray-50 px-4 my-1 rounded-lg open-group" aria-expanded="@if($loop->first) true @else false @endif" data-group-target="{{$Categorie['url']}}">
+                                        {{ $Categorie['nom'] }}
                                     </button>
                                 @endforeach
                             </div>
                             <div class="w-8/12">
-                                @foreach ($GroupProduct as $key => $GroupeListe)
-                                    <div id="{{$key}}" class="@if($loop->first)  @else hidden @endif productgroup">
-                                        @foreach ($GroupeListe as $Group)
+                                @foreach ($CategoriesProduct as $Categorie)
+                                    <div id="{{$Categorie['url']}}" class="@if($loop->first)  @else hidden @endif productgroup">
+                                        @foreach ($GroupProduct as $Group)
+                                        @if ($Group['categorie_parent'] == $Categorie['id'])
                                             <div class="p-4">
                                                 <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
                                                     <div class="mt-1 flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50">
@@ -38,14 +39,15 @@
                                                         </svg>
                                                     </div>
                                                     <div>
-                                                        <a href="{{$Group['slug']}}" class="font-semibold text-gray-900 group-hover:text-gray-500">
-                                                            {{$Group['name']}}
+                                                        <a href="/{{$Categorie['url']}}/{{$Group['url']}}" class="font-semibold text-gray-900 group-hover:text-gray-500">
+                                                            {{$Group['nom']}}
                                                             <span class="absolute inset-0"></span>
                                                         </a>
                                                         <p class="mt-1 text-gray-600">{{$Group['description']}}</p>
                                                     </div>
                                                 </div>
                                             </div>
+                                        @endif
                                         @endforeach
                                     </div>
                                 @endforeach
@@ -111,12 +113,12 @@
             @foreach ($CategoriesProduct as $Categorie)
                 <div class="px-4 py-3">
                     <button type="button" class="inline-flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900 btn-sub-menu" aria-expanded="false">
-                        <span>{{ $Categorie['name'] }}</span>
+                        <span>{{ $Categorie['nom'] }}</span>
                         <svg class="size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
                             <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
                         </svg>
                     </button>
-                    <div class="hidden block sub-menu">
+                    {{-- <div class="hidden block sub-menu">
                         @foreach ($GroupProduct[$Categorie['type']] as $GroupeListe)
                             <div class="p-2">
                                 <div class="group relative flex gap-x-6 rounded-lg p-2 hover:bg-gray-50">
@@ -130,7 +132,7 @@
                                 </div>
                             </div>
                         @endforeach
-                    </div>
+                    </div>--}}
                 </div>
             @endforeach
             <a target="_blank" href="https://manager.NxHost.fr" class="px-6">
