@@ -26,8 +26,7 @@
     <!-- SEO -->
     <meta name="robots" content="index, follow">
     <meta property="description" content="{{$description}}">
-    <meta name="keywords" content="hebergement, gaming, anti ddos fivem, minecraft hosting, hebergeur serveur minecraft, fivem server, hosting france, hébergeur minecraft, fivem anti ddos, hébergeur fivem gratuit, hebergeur fivem gratuit, hébergeur fivem gratuit 24h">
-    <meta name="author" content="NxHost">
+    <meta name="keywords" content="hebergement, gaming, anti ddos fivem, minecraft hosting, hebergeur serveur minecraft, fivem server, hosting france, hébergeur minecraft, fivem anti ddos, hébergeu>    <meta name="author" content="NxHost">
 
     <meta property="og:title" content="{{ trim($__env->yieldContent('title')) ? trim($__env->yieldContent('title')) . ' - ' : '' }}NxHost">
     <meta property="og:description" content="{{$description}}">
