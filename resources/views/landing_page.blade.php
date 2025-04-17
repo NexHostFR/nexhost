@@ -1,7 +1,7 @@
 @extends('base')
 
 @section('body')
-<main>
+<main class="p-1 md:p-0">
     <div class="flex flex-col md:flex-row py-10 my-10 items-center">
         <div class="md:w-1/2 mx-auto text-center">
             <h1 class="text-4xl font-bold text-gray-900 dark:text-white">NxHost</h1>
@@ -24,8 +24,8 @@
                 <h2 class="text-2xl font-bold">Pourquoi choisir NxHost</h2>
                 <div class="mt-4">
                     <dl class="mb-6">
-                        <dt class="font-semibold">Créé au cœur de l'Europe</dt>
-                        <dd class="mt-2 text-gray-900 dark:text-gray-300">Nous développons nos propres solutions qui sont conçues en France et hébergées en Europe.</dd>
+                        <dt class="font-semibold">Créé au cœur de l'France</dt>
+                        <dd class="mt-2 text-gray-900 dark:text-gray-300">Nous développons nos propres solutions qui sont conçues en France et hébergées en France.</dd>
                     </dl>
                     <dl class="mb-6">
                         <dt class="font-semibold">Performances optimisées</dt>
