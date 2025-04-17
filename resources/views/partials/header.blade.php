@@ -30,24 +30,24 @@
                                 @foreach ($CategoriesProduct as $Categorie)
                                     <div id="{{$Categorie['url']}}" class="@if($loop->first)  @else hidden @endif productgroup">
                                         @foreach ($GroupProduct as $Group)
-                                        @if ($Group['categorie_parent'] == $Categorie['id'])
-                                            <div class="p-4">
-                                                <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
-                                                    <div class="mt-1 flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50">
-                                                        <svg class="size-6 text-gray-600 group-hover:text-gray-500" fill="none" viewBox="-1 -1 26 26" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-                                                            <path d="M13.405 7.027a5.001 5.001 0 0 0-9.499-1.004A3.5 3.5 0 1 0 3.5 13H13a3 3 0 0 0 .405-5.973"/>
-                                                        </svg>
-                                                    </div>
-                                                    <div>
-                                                        <a href="/{{$Categorie['url']}}/{{$Group['url']}}" class="font-semibold text-gray-900 group-hover:text-gray-500">
-                                                            {{$Group['nom']}}
-                                                            <span class="absolute inset-0"></span>
-                                                        </a>
-                                                        <p class="mt-1 text-gray-600">{{$Group['description']}}</p>
+                                            @if ($Group['categorie_parent'] == $Categorie['id'])
+                                                <div class="p-4">
+                                                    <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
+                                                        <div class="mt-1 flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50">
+                                                            <svg class="size-6 text-gray-600 group-hover:text-gray-500" fill="none" viewBox="-1 -1 26 26" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                                                                <path d="M13.405 7.027a5.001 5.001 0 0 0-9.499-1.004A3.5 3.5 0 1 0 3.5 13H13a3 3 0 0 0 .405-5.973"/>
+                                                            </svg>
+                                                        </div>
+                                                        <div>
+                                                            <a href="/{{$Categorie['url']}}/{{$Group['url']}}" class="font-semibold text-gray-900 group-hover:text-gray-500">
+                                                                {{$Group['nom']}}
+                                                                <span class="absolute inset-0"></span>
+                                                            </a>
+                                                            <p class="mt-1 text-gray-600">{{$Group['description']}}</p>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        @endif
+                                            @endif
                                         @endforeach
                                     </div>
                                 @endforeach
@@ -66,12 +66,23 @@
 
 
                     <div id="menu-ressources" class="menu absolute left-1/2 z-10 mt-5 flex w-screen max-w-max -translate-x-1/2 px-4 hidden group-hover:block">
-                        <div class="w-screen max-w-3xl min-h-52 flex-auto overflow-hidden rounded-3xl bg-white text-sm/6 shadow-lg ring-1 ring-gray-900/5">
+                        <div class="w-screen max-w-3xl min-h-52 flex flex-row content-around overflow-hidden rounded-3xl bg-white text-sm/6 shadow-lg ring-1 ring-gray-900/5">
                             <div class="p-4">
                                 <h3 class="px-4 font-bold">Support et contact</h3>
                                 <div class="">
                                     <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
                                         <a href="/sales" class="font-semibold text-gray-900 group-hover:text-gray-500">Contactez-nous</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="px-4 font-bold">Nos information</h3>
+                                <div class="">
+                                    <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
+                                        <a href="/a-propos" class="font-semibold text-gray-900 group-hover:text-gray-500">À propos de NxHost</a>
+                                    </div>
+                                    <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
+                                        <a href="/a-propos/carriere" class="font-semibold text-gray-900 group-hover:text-gray-500">NxHost recrute</a>
                                     </div>
                                 </div>
                             </div>
@@ -86,7 +97,7 @@
     </div>
 </header>
 <header class="md:hidden">
-    <div class="mx-3">
+    <div class="mx-3 flex flex-row w-full justify-between items-center pt-3">
         <button class="relative group btn-burger" aria-expanded="false">
             <div class="relative flex overflow-hidden items-center justify-center rounded-full w-[30px] h-[30px] transform transition-all ring-0 ring-gray-300 hover:ring-8 group-focus:ring-4 ring-opacity-30 duration-200 shadow-md">
                 <div class="flex flex-col justify-between w-[10px] h-[10px] transform transition-all duration-300 origin-center overflow-hidden">
@@ -101,8 +112,11 @@
                 </div>
             </div>
         </button>
+        <a target="_blank" href="https://manager.NxHost.fr" class="px-6 w-full justify-end flex">
+            <button class="bg-gray-700 text-white py-2 rounded hover:bg-gray-800 w-5/12">Espace client</button>
+        </a>
     </div>
-    <div class="menu-burger fixed top-[40px] left-0 h-[calc(100vh-30px)] w-full bg-white shadow-lg transform -translate-x-full transition-transform duration-300 ease-in-out">
+    <div class="menu-burger fixed top-[60px] left-0 h-[calc(100vh-30px)] w-full bg-white shadow-lg transform -translate-x-full transition-transform duration-300 ease-in-out">
         <div class="flex items-center">
             <a href="/" class="no-underline">
                 <img src="/asset/img/logo.png" alt="Logo de NxHost" class="h-16">
@@ -118,26 +132,28 @@
                             <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
                         </svg>
                     </button>
-                    {{-- <div class="hidden block sub-menu">
-                        @foreach ($GroupProduct[$Categorie['type']] as $GroupeListe)
+                    <div class="hidden block sub-menu">
+                        @foreach ($GroupProduct as $GroupeListe)
+                        @if ($Group['categorie_parent'] == $Categorie['id'])
                             <div class="p-2">
                                 <div class="group relative flex gap-x-6 rounded-lg p-2 hover:bg-gray-50">
                                     <div>
-                                        <a href="{{$GroupeListe['slug']}}" class="font-semibold text-gray-900 group-hover:text-gray-500 text-sm">
-                                            {{$GroupeListe['name']}}
+                                        <a href="/{{$Categorie['url']}}/{{$Group['url']}}" class="font-semibold text-gray-900 group-hover:text-gray-500 text-sm">
+                                            {{$GroupeListe['nom']}}
                                             <span class="absolute inset-0"></span>
                                         </a>
                                         <p class="text-gray-600 text-sm">{{$GroupeListe['description']}}</p>
                                     </div>
                                 </div>
                             </div>
+                        @endif
                         @endforeach
-                    </div>--}}
+                    </div>
                 </div>
             @endforeach
-            <a target="_blank" href="https://manager.NxHost.fr" class="px-6">
+            {{-- <a target="_blank" href="https://manager.NxHost.fr" class="px-6">
                 <button class="bg-gray-700 text-white py-2 mt-5 rounded hover:bg-gray-800 w-11/12">Espace client</button>
-            </a>
+            </a> --}}
         </div>
     </div>
 </header>
