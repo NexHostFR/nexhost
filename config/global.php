@@ -2,21 +2,21 @@
 
 return [
     'categorie' => [
-        [
+        "gaming"=>[
             'id' => 1,
             'url' => 'gaming',
             'nom' => 'Gaming',
             'categorie_parent' => null,
             'description' => null,
         ],
-        [
+        "minecraft"=>[
             'id' => 2,
             'url' => 'minecraft',
             'nom' => 'Minecraft',
             'categorie_parent' => 1,
             'description' => null,
         ],
-        [
+        "fivem"=>[
             'id' => 3,
             'url' => 'fivem',
             'nom' => 'Fivem',

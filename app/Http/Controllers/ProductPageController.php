@@ -16,9 +16,12 @@ class ProductPageController extends Controller
     public function __construct(Request $request) {
         $url = array_slice(explode('/', $request->getRequestUri()), 1);
         if(!empty($url)) {
-            $this->categorie = Categorie::where('url', $url[0])->get();
-            $this->offres = Categorie::where('url', $url[1])->get()->first();
-            $this->produit = Produits::where('categorie_id', $this->offres->id)->get();
+            $this->categorie = config('global.categorie')[$url[0]];
+            // $this->categorie = Categorie::where('url', $url[0])->get();
+            $this->offres = config('global.categorie')[$url[1]];
+            // $this->offres = Categorie::where('url', $url[1])->get()->first();
+            $this->produit = config('global.product')[$url[1]];
+            // $this->produit = Produits::where('categorie_id', $this->offres->id)->get();
             $this->url = [
                 'categorys' => $url[0],
                 'produit' => $url[1]
@@ -63,6 +66,6 @@ class ProductPageController extends Controller
                 "description" => "Découvrez nos offres gaming pour tout type de projets, qu'il soit petit, ou avancée.",
                 "keywords" => "hebergement, gaming, anti ddos fivem, minecraft hosting, hebergeur serveur minecraft, fivem server, hosting france, hébergeur minecraft, fivem anti ddos, hébergeur fivem gratuit, hebergeur fivem gratuit, hébergeur fivem gratuit 24h"
             ]
-            );
+        );
     }
 }
