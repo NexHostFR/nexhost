@@ -45,7 +45,8 @@
                 <img class="rounded-lg border-2 border-gray-300" src="/asset/img/serveur-image-ssd.jpg" alt="Serveur SSD" />
             </div>
         </div>
-    </div>    
+    </div>
+    {{-- Caroussel des marques que on utilise --}}
     @include('components.discord')
     <!-- Liste des produit les plus bas de chaque catégorie -->
     {{-- <div class="container mt-3 b-4 pb-4">

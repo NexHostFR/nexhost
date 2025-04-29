@@ -18,6 +18,8 @@
 
     @include('components.information_general')
 
+	@include('components.faq')
+
     @include('components.information_backup')
 
     <div>

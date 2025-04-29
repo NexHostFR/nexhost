@@ -32,15 +32,15 @@
                     <li><a href="/a-propos" class="text-gray-600 hover:underline">À propos de NxHost</a></li>
                     <li><a href="/a-propos/equipe" class="text-gray-600 hover:underline">L'équipe</a></li>
                     <li><a href="/a-propos/carriere" class="text-gray-600 hover:underline">NxHost recrute</a></li>
-                    <li><a href="https://news.NxHost.fr" class="text-gray-600 hover:underline" target="_blank">Les news de NxHost</a></li>
+                    {{-- <li><a href="https://news.NxHost.fr" class="text-gray-600 hover:underline" target="_blank">Les news de NxHost</a></li> --}}
                 </ul>
             </div>
             <div>
                 <h3 class="text-lg font-semibold text-gray-800">Support</h3>
                 <ul class="space-y-2 mt-2">
-                    <li><a href="https://faq.NxHost.fr" target="_blank" class="text-gray-600 hover:underline">FAQ</a></li>
+                    {{-- <li><a href="https://faq.NxHost.fr" target="_blank" class="text-gray-600 hover:underline">FAQ</a></li> --}}
                     <li><a href="/sales" class="text-gray-600 hover:underline">Contact commercial</a></li>
-                    <li><a href="https://status.NxHost.fr" target="_blank" class="text-gray-600 hover:underline">Statut des services</a></li>
+                    <li><a href="https://status.nxhost.fr" target="_blank" class="text-gray-600 hover:underline">Statut des services</a></li>
                 </ul>
             </div>
         </div>

@@ -21,7 +21,7 @@
                         <div class="w-screen max-w-3xl min-h-52 flex flex-row overflow-hidden rounded-3xl bg-white text-sm/6 shadow-lg ring-1 ring-gray-900/5">
                             <div class="w-3/12 border-r border-gray-200 flex flex-col items-center p-2">
                                 @foreach ($CategoriesProduct as $Categorie)
-                                    <button class="w-full py-2 text-left font-semibold text-gray-900 hover:bg-gray-50 px-4 my-1 rounded-lg open-group" aria-expanded="@if($loop->first) true @else false @endif" data-group-target="{{$Categorie['url']}}">
+                                    <button class="w-full py-2 text-left font-semibold dark:text-gray-50 text-gray-900 dark:hover:bg-gray-600 hover:bg-gray-100 px-4 my-1 rounded-lg open-group" aria-expanded="@if($loop->first) true @else false @endif" data-group-target="{{$Categorie['url']}}">
                                         {{ $Categorie['nom'] }}
                                     </button>
                                 @endforeach
@@ -32,18 +32,18 @@
                                         @foreach ($GroupProduct as $Group)
                                             @if ($Group['categorie_parent'] == $Categorie['id'])
                                                 <div class="p-4">
-                                                    <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
+                                                    <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50 items-center">
                                                         <div class="mt-1 flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50">
-                                                            <svg class="size-6 text-gray-600 group-hover:text-gray-500" fill="none" viewBox="-1 -1 26 26" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                                                            <svg class="size-6 dark:text-gray-200 text-gray-600 dark:groupe-hover:text-gray-100 group-hover:text-gray-500" fill="none" viewBox="-1 -1 26 26" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
                                                                 <path d="M13.405 7.027a5.001 5.001 0 0 0-9.499-1.004A3.5 3.5 0 1 0 3.5 13H13a3 3 0 0 0 .405-5.973"/>
                                                             </svg>
                                                         </div>
                                                         <div>
-                                                            <a href="/{{$Categorie['url']}}/{{$Group['url']}}" class="font-semibold text-gray-900 group-hover:text-gray-500">
+                                                            <a href="/{{$Categorie['url']}}/{{$Group['url']}}" class="font-semibold dark:text-gray-50 text-gray-900 dark:group-hover:text-gray-200 group-hover:text-gray-500">
                                                                 {{$Group['nom']}}
                                                                 <span class="absolute inset-0"></span>
                                                             </a>
-                                                            <p class="mt-1 text-gray-600">{{$Group['description']}}</p>
+                                                            <p class="mt-1 dark:text-gray-200 text-gray-600">{{$Group['description']}}</p>
                                                         </div>
                                                     </div>
                                                 </div>
