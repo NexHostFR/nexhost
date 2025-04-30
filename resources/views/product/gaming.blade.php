@@ -8,10 +8,9 @@
 @endsection
 
 @section('product')
-    <div class="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 max-w-5xl mx-auto">
+    <div class="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-3 max-w-7xl mx-auto">
         @foreach ($offres as $offer)
-            <div class="flex flex-col rounded-2xl shadow-md p-8 
-                {{ data_get($offer, 'highlight') ? 'bg-gray-900 text-white' : 'bg-white ring-1 ring-gray-200' }}">
+            <div class="flex flex-col rounded-2xl shadow-md p-8 {{ data_get($offer, 'highlight') ? 'bg-gray-900 text-white' : 'bg-white ring-1 ring-gray-200' }}">
 
                 <h3 class="text-lg font-semibold text-primary">{{ data_get($offer, 'title') }}</h3>
                 <p class="mt-4 text-4xl font-bold">
