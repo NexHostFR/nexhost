@@ -5,9 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Categorie extends Model
+class Ticket extends Model
 {
     use HasFactory;
 
-    protected $connection = "mysql";
+    protected $fillable = [
+        'titre', 'departement', 'product', 'content', 'status', 'user_id'
+    ];
 }

@@ -22,6 +22,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [LandingPageController::class, 'index']);
 Route::post('/', [LandingPageController::class, 'store_newsletter']);
 
+include('manager.php');
+
 // Page a propos
 Route::get('/a-propos', [AProposController::class, 'a_propos']);
 Route::get('/a-propos/equipe', [AProposController::class, 'view_equipe']);
