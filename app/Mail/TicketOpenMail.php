@@ -40,7 +40,7 @@ class TicketOpenMail extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: 'mail.openTicket',
+            view: 'manager.mail.openTicket',
             with: [
                 "url" => env('APP_URL') . "/tickets/view/" . $this->id
             ]

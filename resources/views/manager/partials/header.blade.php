@@ -32,18 +32,18 @@
                     <a href="/" class="w-full md:w-auto">
                         <button class="w-full px-4 py-2 border border-gray-300 rounded bg-white hover:bg-gray-100">Panel</button>
                     </a>
-                    <a href="/services" class="w-full md:w-auto">
+                    <a href="/manager/services" class="w-full md:w-auto">
                         <button class="w-full px-4 py-2 border border-gray-300 rounded bg-white hover:bg-gray-100">Mes services</button>
                     </a>
-                    <a href="/invoices" class="w-full md:w-auto">
+                    <a href="/manager/invoices" class="w-full md:w-auto">
                         <button class="w-full px-4 py-2 border border-gray-300 rounded bg-white hover:bg-gray-100">Facturation</button>
                     </a>
                 </div>
                 <div class="w-full md:w-1/5 flex flex-col md:flex-row justify-center">
-                    <a href="/tickets" class="w-full md:w-auto mx-2">
+                    <a href="/manager/tickets" class="w-full md:w-auto mx-2">
                         <button class="w-full px-4 py-2 border border-gray-300 rounded bg-white hover:bg-gray-100">Mes tickets</button>
                     </a>
-                    <a href="/tickets/create" class="w-full md:w-auto mx-2">
+                    <a href="/manager/tickets/create" class="w-full md:w-auto mx-2">
                         <button class="w-full px-4 py-2 border border-gray-300 rounded bg-white hover:bg-gray-100">Ouvrir un ticket</button>
                     </a>
                 </div>

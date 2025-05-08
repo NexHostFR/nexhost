@@ -13,11 +13,11 @@
             <h2 class="text-3xl font-bold text-gray-800">Connexion requise</h2>
             <p class="text-gray-600 mt-2">Veuillez vous connecter ou vous inscrire pour continuer.</p>
             <div class="mt-6 space-y-3">
-                <a href="{{$manager_url}}/auth/login?url_source={{$url_source}}" 
+                <a href="/manager/auth/login?url_source={{$url_source}}" 
                    class="block bg-blue-600 text-white px-5 py-3 rounded-lg hover:bg-blue-700 font-medium shadow-md transition-all">
                     Connexion
                 </a>
-                <a href="{{$manager_url}}/auth/register?url_source={{$url_source}}" 
+                <a href="/manager/auth/register?url_source={{$url_source}}" 
                    class="block bg-green-600 text-white px-5 py-3 rounded-lg hover:bg-green-700 font-medium shadow-md transition-all">
                     Inscription
                 </a>

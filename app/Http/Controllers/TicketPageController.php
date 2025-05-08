@@ -3,13 +3,15 @@
 namespace App\Http\Controllers;
 
 use App\Mail\TicketOpenMail;
+use App\Models\ReponseTicket;
+use App\Models\Ticket;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
 class TicketPageController extends Controller
 {
     public function view_list() {
-        return view('tickets.list_page', [
+        return view('manager.tickets.list_page', [
             'ticketsListe' => Ticket::where('user_id', auth()->user()->id)->get()
         ]);
     }

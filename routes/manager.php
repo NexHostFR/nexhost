@@ -8,12 +8,10 @@ use App\Http\Controllers\TicketPageController;
 use Illuminate\Support\Facades\Route;
 
 // Section authentification
-Route::middleware(['guest'])->group(function () {
-    Route::get('/auth/login', [AuthPageController::class, 'index_login'])->name('login');
-    Route::post('/auth/login', [AuthPageController::class, 'post_login']);
-    Route::get('/auth/register', [AuthPageController::class, 'index_register'])->name('register');
-    Route::post('/auth/register', [AuthPageController::class, 'post_register']);
-});
+Route::get('/auth/login', [AuthPageController::class, 'index_login'])->name('login');
+Route::post('/auth/login', [AuthPageController::class, 'post_login']);
+Route::get('/auth/register', [AuthPageController::class, 'index_register'])->name('register');
+Route::post('/auth/register', [AuthPageController::class, 'post_register']);
 
 Route::middleware(['auth'])->group(function () {
     Route::get('/auth/logout', [AuthPageController::class, 'logout'])->name('logout');

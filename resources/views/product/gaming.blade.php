@@ -45,7 +45,7 @@
                     <?php endif; ?>
                 </ul>
 
-                <a href="https://shop.nxhost.fr/order/{{ data_get($offer, 'url') }}" class="mt-4 rounded-md bg-primary text-center text-white py-2.5 text-sm font-semibold shadow">
+                <a href="/shop/{{ data_get($offer, 'url') }}" class="mt-4 rounded-md bg-primary text-center text-white py-2.5 text-sm font-semibold shadow">
                     Commander
                 </a>
             </div>

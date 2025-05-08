@@ -1,4 +1,4 @@
-@extends('base')
+@extends('manager.base')
 
 @section('body')
 {{-- Ici, on va affiche un tableau en format liste, ou on fait apparaitre le produit, l'état et un bouton d'interaction (potentiellement aussi voir facture lier a ce produit) --}}

@@ -1,4 +1,4 @@
-@extends('baseMail')
+@extends('manager.baseMail')
 
 @section('body')
     <main>

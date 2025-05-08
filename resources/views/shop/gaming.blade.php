@@ -11,8 +11,8 @@
             <h2 class="text-2xl font-bold mb-2">Une connexion est requise</h2>
             <p class="text-gray-600 mb-6">Veuillez vous connecter ou vous inscrire pour continuer votre achat.</p>
             <div class="flex flex-row gap-3">
-                <a href="{{$manager_url}}/auth/login?url_source={{$url_source}}" class="btn bg-gray-400 text-white">Connexion</a>
-                <a href="{{$manager_url}}/auth/register?url_source={{$url_source}}" class="btn bg-gray-400 text-white">Inscription</a>
+                <a href="/manager/auth/login?url_source={{$url_source}}" class="btn bg-gray-400 text-white">Connexion</a>
+                <a href="/manager/auth/register?url_source={{$url_source}}" class="btn bg-gray-400 text-white">Inscription</a>
             </div>
         <?php } ?>
     </div>

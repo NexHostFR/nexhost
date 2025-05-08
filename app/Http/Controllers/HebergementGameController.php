@@ -7,7 +7,7 @@ use App\Models\Commande;
 use App\Models\PterodactylUser;
 use App\Models\PterodactylUserServer;
 use App\Models\User;
-use App\StripeService;
+use App\Services\StripeService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Env;
 use Illuminate\Support\Facades\Auth;
@@ -15,7 +15,6 @@ use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Cookie;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Mail;
-use Illuminate\Support\Facades\Redis;
 use Stripe\Exception\ApiErrorException;
 use Stripe\Exception\CardException;
 
@@ -27,20 +26,16 @@ class HebergementGameController extends Controller
 
     public function __construct(Request $request) {
         $this->api_key = env('API_PTERODACTYL');
-        $this->config = config('global');
+        $this->config = config('game');
     }
 
     public function orderGameHosting($categorie, $id, Request $request) {
-        $uniqueUserKey = sha1($request->ip() . $request->userAgent() . $request->header('Accept-Language'));
         if(!empty(Auth::user())) {
             $user = Auth::user();
-        }elseif(!is_null(Redis::command("GET", ["session:$uniqueUserKey:user_id"]))) {
-            $user = User::find(Redis::command("GET", ["session:$uniqueUserKey:user_id"]));
-            Auth::login($user);
         } else {
             $user = null;
         }
-        return view('gaming', [
+        return view('shop.gaming', [
             "data_produit" => [
                 "id" => $id,
                 "name" => $this->config[$categorie][$id]['name'],
@@ -62,7 +57,6 @@ class HebergementGameController extends Controller
             $commande = Commande::where('user_id', Auth::user()->id)->where('categorie', $categorie)->where('produit', $id)->where('status', 'essaie')->first();
             if($commande) {
                 return back()->with('error', "Vous avez déjà un essaie en cours.");
-                exit;
             }
         } else {
             $stripeManager = new StripeService();

@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Facture;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class FacturePageController extends Controller
 {   

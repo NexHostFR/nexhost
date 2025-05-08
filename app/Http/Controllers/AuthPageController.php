@@ -19,14 +19,14 @@ class AuthPageController extends Controller
         $request->session()->invalidate(); // Invalidate session
         $request->session()->regenerateToken(); // Regenerate CSRF token
 
-        return redirect('/auth/login'); // Redirect to login page
+        return redirect('/manager/auth/login'); // Redirect to login page
     }
 
     // section de connexion
     public function index_login(Request $request) {
         // exit;
         session()->put('url_source', $request->get('url_source'));
-        return view('auth.login',
+        return view('manager.auth.login',
             [   
                 'slimHeader' => true,
                 'data' => ["email" => ""],
@@ -46,14 +46,12 @@ class AuthPageController extends Controller
         }
 
         Auth::login($user);
-        $uniqueUserKey = sha1($request->ip() . $request->userAgent() . $request->header('Accept-Language'));
-        Redis::command("SET", ["session:$uniqueUserKey:user_id", $user->id]);
 
 
         if(!is_null(session()->get('url_source'))) {
             return response()->redirectTo(session()->get('url_source'));
         } else {
-            return redirect()->to(url('/'));
+            return redirect()->to(url('/manager/'));
         }
     }
 
@@ -63,7 +61,7 @@ class AuthPageController extends Controller
         $etape = $request->session()->get('etapeSuivante');
         switch($etape) {
             case 'etape_code': 
-                return view('auth.register.etape_code',
+                return view('manager.auth.register.etape_code',
                     [
                         'slimHeader' => true,
                         'data' => [
@@ -72,7 +70,7 @@ class AuthPageController extends Controller
                     ]
                 );
             case 'etape_fin':
-                return view('auth.register.etape_final',
+                return view('manager.auth.register.etape_final',
                     [
                         'slimHeader' => true,
                         'data' => [
@@ -81,7 +79,7 @@ class AuthPageController extends Controller
                     ]
                 );
             default:
-                return view('auth.register.etape_debut',
+                return view('manager.auth.register.etape_debut',
                     [
                         'slimHeader' => true,
                         'data' => [
@@ -106,7 +104,7 @@ class AuthPageController extends Controller
                 if(!is_null(session()->get('url_source'))) {
                     return response()->redirectTo(session()->get('url_source'));
                 } else {
-                    return redirect()->to(url('/'));
+                    return redirect()->to(url('/manager/'));
                 }
                 break;
         }
@@ -193,8 +191,6 @@ class AuthPageController extends Controller
             $user->save();
 
             Auth::login($user);
-            $uniqueUserKey = sha1($request->ip() . $request->userAgent() . $request->header('Accept-Language'));
-            Redis::command("SET", ["session:$uniqueUserKey:user_id", $user->id]);
             $request->session()->put('etapeSuivante', 'success');
             $request->session()->save();
         } catch (\Exception $e) {

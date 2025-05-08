@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-        {{ trim($__env->yieldContent('title')) ? trim($__env->yieldContent('title')) . ' - ' : '' }}Manager NexHost
-    </title>
+        @hasSection('title')
+            @yield('title') - 
+        @endif
+        Manager NexHost
+    </title>    
 
     <link rel="shortcut icon" href="/asset/img/logo.png" type="image/x-icon">
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
-    @include('partials.header')
+    @include('manager.partials.header')
 
     @yield('body')
 
-    @include('partials.footer')
+    @include('manager.partials.footer')
 </body>
 </html>

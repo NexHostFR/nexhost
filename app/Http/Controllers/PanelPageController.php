@@ -2,22 +2,25 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Commande;
+use App\Models\Facture;
+use App\Models\Ticket;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class PanelPageController extends Controller
 {
     public function index() {
-        // Mail::to("camillefameck@gmail.com")->send(new TicketReponseMail(1));
         $ticketsListe = Ticket::where('user_id', auth()->user()->id)->get();
         
         $CardListeInformationCompte = [
             [
                 "titre" => "Mes services",
-                "information" => DB::connection('mysql_shop')->table('commandes')->where('user_id', Auth::user()->id)->count()
+                "information" => Commande::where('user_id', Auth::user()->id)->count()
             ],
             [
                 "titre" => "Mes factures",
-                "information" => DB::connection('mysql_shop')->table('factures')->where('id_user', Auth::user()->id)->count()
+                "information" => Facture::where('id_user', Auth::user()->id)->count()
             ],
             [
                 "titre" => "Mes tickets",

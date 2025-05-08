@@ -1,4 +1,4 @@
-@extends('base')
+@extends('manager.base')
 
 @section('title', "$product->produit - Détails")
 
