@@ -3,7 +3,7 @@
 @else
     <header>
         <div class="flex flex-row py-3 justify-between items-center">
-            <a href="/" class="w-1/12">
+            <a href="/manager/" class="w-1/12">
                 <img src="{{ asset('asset/img/logo.png') }}" alt="Logo de NexHost" class="h-auto">
             </a>
             <form class="w-2/3 hidden md:flex justify-center mx-3">
@@ -29,7 +29,7 @@
             </button>
             <div class="hidden md:flex flex-col md:flex-row justify-between w-full my-4" id="menu-header">
                 <div class="px-3 w-full md:w-1/5 justify-around flex flex-col md:flex-row">
-                    <a href="/" class="w-full md:w-auto">
+                    <a href="/manager/" class="w-full md:w-auto">
                         <button class="w-full px-4 py-2 border border-gray-300 rounded bg-white hover:bg-gray-100">Panel</button>
                     </a>
                     <a href="/manager/services" class="w-full md:w-auto">
