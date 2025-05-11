@@ -25,17 +25,12 @@ class HeaderServiceProvider extends ServiceProvider
         View::composer('partials.header', function($view) {
             $CategoriesProduct = [];
             $GroupProduct = [];
-            try {
-                $CategoriesProduct = Categorie::where('categorie_parent', null)->get();
-                $GroupProduct = Categorie::where('categorie_parent', '!=', null)->get();
-            } catch (\Exception $e) {
-                $categorieListe = config('global.categorie');
-                foreach($categorieListe as $categorie) {
-                    if(is_null($categorie['categorie_parent'])) {
-                        array_push($CategoriesProduct, $categorie); 
-                    } else {
-                        array_push($GroupProduct, $categorie);
-                    }
+            $categorieListe = config('global.categorie');
+            foreach($categorieListe as $categorie) {
+                if(is_null($categorie['categorie_parent'])) {
+                    array_push($CategoriesProduct, $categorie); 
+                } else {
+                    array_push($GroupProduct, $categorie);
                 }
             }
             $view->with('CategoriesProduct', $CategoriesProduct);

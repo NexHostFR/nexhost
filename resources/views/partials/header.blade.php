@@ -90,7 +90,7 @@
                     </div>
                 </li>
             </ul>
-            <a target="_blank" href="https://manager.NxHost.fr">
+            <a target="_blank" href="/manager/auth/login">
                 <button class="bg-gray-700 text-white py-2 px-4 rounded hover:bg-gray-800">Espace client</button>
             </a>
         </div>
@@ -112,7 +112,7 @@
                 </div>
             </div>
         </button>
-        <a target="_blank" href="https://manager.NxHost.fr" class="px-6 w-full justify-end flex">
+        <a target="_blank" href="/manager/auth/login" class="px-6 w-full justify-end flex">
             <button class="bg-gray-700 text-white py-2 rounded hover:bg-gray-800 w-5/12">Espace client</button>
         </a>
     </div>

@@ -22,6 +22,14 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [LandingPageController::class, 'index']);
 Route::post('/', [LandingPageController::class, 'store_newsletter']);
 
+Route::prefix('manager')->group(function () {
+    include __DIR__.'/manager.php';
+});
+
+Route::prefix('shop')->group(function () {
+    include __DIR__.'/shop.php';
+});
+
 // Page a propos
 Route::get('/a-propos', [AProposController::class, 'a_propos']);
 Route::get('/a-propos/equipe', [AProposController::class, 'view_equipe']);

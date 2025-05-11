@@ -5,10 +5,10 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Produits extends Model
+class Customer extends Model
 {
-    use HasFactory;
-
-    protected $connection = "mysql";
-    protected $table = "produits";
+    protected $fillable = [
+        "user_id",
+        "id_stripe"
+    ];
 }
