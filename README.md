@@ -23,9 +23,25 @@ composer install
 
 composer install
 npm install && npm run build
+```
 
+Commande Unix
+```bash
 cp .env.example .env
+```
 
+Commande PowerShell
+```bash
+Copy-Item .env.example .env
+```
+
+Commande CMD
+```bash
+copy .env.example .env
+```
+
+On va crée ensuite la clé de l'application
+```bash
 php artisan key:generate
 ```
 
