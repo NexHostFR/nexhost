@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
 
 class PterodactylService {
-    private $url_pterodactyl = "http://panel.nexhost.fr/api/application/";
+    private $url_pterodactyl = "https://panel.nexhost.fr/api/application/";
 
     private $api_key;
     private $user_id;
