@@ -160,7 +160,7 @@ class HebergementGameController extends Controller
         // Create du serveur fivem for user
         $PteroService = new PterodactylService();
         $allocationId = $PteroService->getAllocations();
-
+        var_dump($allocationId);
         $ch = curl_init($this->url_pterodactyl . "servers");
 
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
