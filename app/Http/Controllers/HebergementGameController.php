@@ -106,7 +106,7 @@ class HebergementGameController extends Controller
                 break;
         }
     
-        return redirect()->to("/order/success?id_produit=" . $id);
+        return redirect()->to("/shop/success?id_produit=" . $id);
     }    
 
     public function createPteroAccount($user_data) {
