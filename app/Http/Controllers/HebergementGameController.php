@@ -69,10 +69,8 @@ class HebergementGameController extends Controller
         }
     
         // Paiement réussi : maintenant on peut créer la commande
-        if(isset($this->config[$categorie][$id]["type"]) && $this->config[$categorie][$id]["type"] == "essai") {
-            $duration = 2;
-            $status = "essaie"; 
-        }
+        $duration = 2;
+        $status = "essaie"; 
         $commande = Commande::create([
             "user_id" => Auth::user()->id,
             "categorie" => $categorie,
