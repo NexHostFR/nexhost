@@ -22,4 +22,9 @@ class Facture extends Model
         "url_visualisation",
         "url_pdf"
     ];
+
+    public function commande()
+    {
+        return $this->belongsTo(Commande::class);
+    }
 }
