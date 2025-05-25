@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Mail;
 use Stripe\Exception\ApiErrorException;
 use Stripe\Exception\CardException;
+use App\Services\PterodactylService;
 
 class HebergementGameController extends Controller
 {   
@@ -157,7 +158,8 @@ class HebergementGameController extends Controller
 
     public function createFivem($id_user, Request $request) {
         // Create du serveur fivem for user
-        $allocationId = $this->getAllocations();
+        $PteroService = new PterodactylService()
+        $allocationId = $PteroService->getAllocations();
 
         $ch = curl_init($this->url_pterodactyl . "servers");
 
@@ -213,7 +215,8 @@ class HebergementGameController extends Controller
     }
 
     public function createMinecraft($id_user, Request $request) {
-        $allocationId = $this->getAllocations();
+        $PteroService = new PterodactylService()
+        $allocationId = $PteroService->getAllocations();
         // Create du serveur minecraft for user
         $ch = curl_init($this->url_pterodactyl . "servers");
 
