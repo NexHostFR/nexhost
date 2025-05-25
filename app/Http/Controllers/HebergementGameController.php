@@ -22,7 +22,7 @@ use App\Services\PterodactylService;
 class HebergementGameController extends Controller
 {   
     private $api_key;
-    private $url_pterodactyl = "http://panel.nexhost.fr/api/application/";
+    private $url_pterodactyl = "https://panel.nexhost.fr/api/application/";
     private $config;
 
     public function __construct(Request $request) {
