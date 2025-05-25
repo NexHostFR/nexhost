@@ -11,6 +11,6 @@ class HebergementWebController extends Controller
     }
     
     public function orderWebHosting($id) {
-        var_dump($id);
+         ($id);
     }
 }

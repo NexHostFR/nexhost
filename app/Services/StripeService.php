@@ -107,7 +107,7 @@ class StripeService
             "description" => $nom
         ]);
 
-        // var_dump($charge);
+        //  ($charge);
     }
 
     public function createCustomer($email, $id, Request $request) {

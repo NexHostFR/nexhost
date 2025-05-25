@@ -100,7 +100,6 @@ class PterodactylService {
             ));
 
             $result = curl_exec($ch);
-            var_dump($result);
             if (curl_errno($ch)) {
                 throw new \Exception('cURL error: ' . curl_error($ch));
             }
@@ -108,13 +107,12 @@ class PterodactylService {
             curl_close($ch);
 
             $response = json_decode($result);
-            var_dump($response);
+             ($response);
             if (!isset($response->data)) {
                 throw new \Exception('Réponse invalide de l’API : ' . $result);
             }
 
             foreach ($response->data as $allocation) {
-                var_dump($allocation);
                 if ($allocation->attributes->assigned == false) {
                     return $allocation->attributes->id;
                 }
