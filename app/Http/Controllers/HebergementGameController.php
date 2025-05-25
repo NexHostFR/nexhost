@@ -208,6 +208,7 @@ class HebergementGameController extends Controller
         curl_close($ch);
 
         $response = json_decode($result);
+        Log::info($response);
         PterodactylUserServer::create([
             "id_user" => $id_user,
             "id_server" => $response->attributes->id
