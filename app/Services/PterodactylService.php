@@ -90,7 +90,7 @@ class PterodactylService {
     public function getAllocations()
     {
         try {
-            $ch = curl_init($this->url_pterodactyl . "nodes/1/allocations");
+            $ch = curl_init($this->url_pterodactyl . "nodes/11/allocations");
 
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
             curl_setopt($ch, CURLOPT_HTTPHEADER, array(
