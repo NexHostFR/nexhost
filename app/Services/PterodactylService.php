@@ -114,7 +114,7 @@ class PterodactylService {
             }
 
             foreach ($response->data as $allocation) {
-                echo $allocation;
+                var_dump($allocation);
                 if ($allocation->attributes->assigned == false) {
                     return $allocation->attributes->id;
                 }
