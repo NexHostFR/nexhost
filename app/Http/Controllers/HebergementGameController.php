@@ -204,7 +204,7 @@ class HebergementGameController extends Controller
 
 
         $result = curl_exec($ch);
-        
+        var_dump($result);
         curl_close($ch);
 
         $response = json_decode($result);
