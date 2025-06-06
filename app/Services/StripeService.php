@@ -25,7 +25,8 @@ class StripeService
     
     public function __construct()
     {
-        $this->secret_key = config("services.stripe.secret");
+        $this->secret_key = env('STRIPE_SECRET_KEY');
+        var_dump($this->secret_key);
         Stripe::setApiKey($this->secret_key);
         $this->stripe_client = new StripeClient($this->secret_key);
     }
